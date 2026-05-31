@@ -368,7 +368,7 @@ textarea { resize: none; height: 70px; }
   font-weight: 700 !important;
 }
 .leaflet-control-zoom a:hover { background: var(--bg) !important; }
-.leaflet-tile { filter: saturate(0.85) brightness(1.02); }
+.leaflet-tile { filter: saturate(0.7) brightness(1.04); }
 
 /* Custom marker pulse */
 @keyframes pulse {
@@ -549,8 +549,9 @@ function initMap(lat, lng) {
     attributionControl: false,
   }).setView([lat, lng], 16);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
+    attribution: '© CartoDB',
   }).addTo(map);
 
   // User position marker
