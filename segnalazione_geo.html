@@ -1,39 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Segnala una strada — StreetSmart</title>
+<title>Segnala — StreetSmart</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --bg: #EDE8DF;
-  --card: #F7F2EA;
-  --border: #DDD6CA;
-  --text: #2E2820;
-  --muted: #9A9080;
-  --accent: #C0392B;
-  --accent-hover: #A93226;
-  --nero: #1C1C1A;
-  --rosso: #C0392B;
-  --giallo: #E8A020;
-  --verde: #27AE60;
-  --blu: #2980B9;
-}
 
 html, body {
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #EDE8DF;
+  color: #2E2820;
   overflow: hidden;
 }
 
-/* ── LAYOUT ── */
 #app {
   display: flex;
   flex-direction: column;
@@ -44,344 +28,235 @@ html, body {
 /* ── HEADER ── */
 #header {
   flex-shrink: 0;
-  background: var(--card);
-  border-bottom: 1px solid var(--border);
+  background: #F7F2EA;
+  border-bottom: 1px solid #DDD6CA;
   padding: 11px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0 1px 8px rgba(58,53,48,0.07);
 }
-.logo-dots { display: flex; gap: 5px; align-items: center; }
-.dot { width: 9px; height: 9px; border-radius: 50%; }
-.brand-text { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: var(--text); margin-left: 6px; text-transform: uppercase; }
-#header-title {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  font-style: italic;
-  color: var(--muted);
-}
+.brand { display: flex; align-items: center; gap: 8px; }
+.brand-name { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #2E2820; }
 #locate-btn {
-  background: var(--bg);
-  border: 1.5px solid var(--border);
+  background: #EDE8DF;
+  border: 1.5px solid #DDD6CA;
   border-radius: 20px;
-  color: var(--text);
-  padding: 6px 12px;
+  color: #2E2820;
+  padding: 6px 14px;
   font-size: 11px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background 0.2s, border-color 0.2s;
   font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
 }
-#locate-btn:hover { border-color: var(--accent); color: var(--accent); }
+#locate-btn:hover { border-color: #C0392B; color: #C0392B; }
 #locate-btn svg { width: 13px; height: 13px; }
 
 /* ── MAP ── */
-#map-container {
-  flex: 1 1 0;
-  position: relative;
-  min-height: 0;
-}
-#map {
-  width: 100%;
-  height: 100%;
+#map-container { flex: 1 1 0; position: relative; min-height: 0; }
+#map { width: 100%; height: 100%; }
+.leaflet-tile { filter: saturate(0.75) brightness(1.03); }
+.leaflet-control-zoom a {
+  background: #F7F2EA !important;
+  color: #2E2820 !important;
+  border-color: #DDD6CA !important;
+  font-weight: 700 !important;
 }
 
-/* Map instruction overlay */
 #map-hint {
   position: absolute;
-  top: 12px;
-  left: 50%;
+  top: 12px; left: 50%;
   transform: translateX(-50%);
-  background: rgba(247,242,234,0.92);
-  border: 1px solid var(--border);
+  background: rgba(247,242,234,0.95);
+  border: 1px solid #DDD6CA;
   border-radius: 20px;
   padding: 8px 18px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--muted);
+  color: #9A9080;
   z-index: 500;
   pointer-events: none;
   white-space: nowrap;
   backdrop-filter: blur(8px);
-  transition: opacity 0.4s;
-  box-shadow: 0 2px 12px rgba(58,53,48,0.1);
+  transition: opacity 0.3s;
+  box-shadow: 0 2px 10px rgba(58,53,48,0.1);
 }
 #map-hint.hidden { opacity: 0; }
 
-/* Selected point badge */
-#point-badge {
+/* Street name popup on map after tap */
+#street-badge {
   position: absolute;
-  bottom: 12px;
-  left: 50%;
+  top: 12px; left: 50%;
   transform: translateX(-50%);
-  background: var(--card);
-  border: 1.5px solid var(--accent);
+  background: #F7F2EA;
+  border: 1.5px solid #C0392B;
   border-radius: 20px;
   padding: 8px 18px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  color: var(--accent);
+  color: #2E2820;
   z-index: 500;
   white-space: nowrap;
   display: none;
-  backdrop-filter: blur(8px);
   box-shadow: 0 2px 12px rgba(192,57,43,0.15);
 }
 
 /* ── BOTTOM PANEL ── */
 #panel {
   flex-shrink: 0;
-  background: var(--card);
-  border-top: 1px solid var(--border);
+  background: #F7F2EA;
+  border-top: 1px solid #DDD6CA;
+  padding: 20px 20px 28px;
   overflow-y: auto;
-  max-height: 55vh;
-  transition: max-height 0.3s ease;
-}
-#panel.collapsed { max-height: 52px; }
-
-#panel-header {
-  padding: 14px 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border);
-  user-select: none;
-}
-#panel-header h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text);
-}
-#panel-toggle {
-  font-size: 18px;
-  color: var(--muted);
-  transition: transform 0.3s;
-  line-height: 1;
-}
-#panel.collapsed #panel-toggle { transform: rotate(180deg); }
-
-#form-inner { padding: 16px; }
-
-/* ── FORM ELEMENTS ── */
-label {
-  display: block;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--muted);
-  margin-bottom: 6px;
-  margin-top: 16px;
-}
-label:first-child { margin-top: 0; }
-
-input, select, textarea {
-  width: 100%;
-  background: var(--bg);
-  border: 1.5px solid var(--border);
-  border-radius: 12px;
-  color: var(--text);
-  font-size: 14px;
-  padding: 11px 13px;
-  outline: none;
-  font-family: 'Inter', sans-serif;
-  transition: border-color 0.2s, background 0.2s;
-  appearance: none;
-}
-input::placeholder, textarea::placeholder { color: #B0A898; }
-input:focus, select:focus, textarea:focus {
-  border-color: var(--accent);
-  background: #F3EDE4;
-}
-select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239A9080' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 34px;
-  cursor: pointer;
-}
-textarea { resize: none; height: 70px; }
-
-/* Coords row */
-.coords-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-.coords-row input {
-  font-size: 12px;
-  color: var(--accent);
-  font-weight: 600;
+  max-height: 52vh;
 }
 
-/* Classification buttons */
+/* ── COLORI ── */
 .colori {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
-  margin-top: 4px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 .colore-btn {
+  flex: 1;
   border: 2px solid transparent;
-  border-radius: 12px;
-  padding: 10px 4px 8px;
+  border-radius: 14px;
+  padding: 12px 4px 10px;
   cursor: pointer;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  background: var(--bg);
-  color: var(--text);
+  gap: 6px;
+  background: #EDE8DF;
   font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  color: #2E2820;
+  transition: border-color 0.15s, transform 0.15s;
 }
-.colore-btn:hover { transform: scale(1.04); }
+.colore-btn:hover { transform: scale(1.03); }
 .colore-btn.selected {
-  border-color: var(--text);
-  box-shadow: 0 2px 10px rgba(58,53,48,0.15);
-  transform: scale(1.07);
+  border-color: #2E2820;
+  box-shadow: 0 2px 10px rgba(58,53,48,0.12);
 }
-.colore-btn .dot-big { width: 18px; height: 18px; border-radius: 50%; }
+.colore-dot { width: 22px; height: 22px; border-radius: 50%; }
 
-/* Submit */
-#submit-btn {
-  margin-top: 20px;
+/* Criteria — shown below dots */
+#criteria {
+  font-size: 12px;
+  color: #7A6F65;
+  line-height: 1.5;
+  min-height: 18px;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+/* ── TEXTAREA ── */
+textarea {
   width: 100%;
-  background: var(--text);
-  color: var(--card);
+  background: #EDE8DF;
+  border: 1.5px solid #DDD6CA;
+  border-radius: 12px;
+  color: #2E2820;
+  font-size: 14px;
+  padding: 12px 14px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  resize: none;
+  height: 68px;
+  transition: border-color 0.2s;
+  margin-bottom: 12px;
+  display: block;
+}
+textarea::placeholder { color: #B0A898; }
+textarea:focus { border-color: #C0392B; background: #F3EDE4; }
+
+/* ── SUBMIT ── */
+#submit-btn {
+  width: 100%;
+  background: #2E2820;
+  color: #F7F2EA;
   border: none;
   border-radius: 14px;
-  padding: 14px;
+  padding: 15px;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   transition: background 0.2s;
-  letter-spacing: 0.04em;
 }
 #submit-btn:hover { background: #1A1410; }
-#submit-btn:disabled { background: #C8C0B4; color: #8A8078; cursor: not-allowed; }
+#submit-btn:disabled { background: #C8C0B4; cursor: not-allowed; }
 
-.disclaimer {
-  margin-top: 10px;
-  font-size: 10px;
-  color: var(--muted);
-  text-align: center;
-}
+.error-msg { color: #C0392B; font-size: 11px; margin-bottom: 10px; display: none; font-weight: 500; }
 
-/* Criteria box */
-#criteria-box {
-  margin-top: 8px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1.5px solid var(--border);
-}
-.criteria-item {
-  display: none;
-  padding: 10px 13px;
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--muted);
-  background: var(--bg);
-}
-.criteria-item.active { display: block; }
-.criteria-item strong { color: var(--text); }
-
-.error-msg { color: var(--accent); font-size: 11px; margin-top: 6px; display: none; font-weight: 500; }
-
-/* ── SUCCESS ── */
-#success-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(237,232,223,0.97);
-  z-index: 2000;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 40px;
-}
-#success-overlay.show { display: flex; }
-#success-overlay h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 34px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 12px;
-}
-#success-overlay p { color: var(--muted); font-size: 15px; line-height: 1.7; }
-#success-overlay .tag { margin-top: 20px; color: var(--verde); font-weight: 700; font-size: 15px; letter-spacing: 0.06em; }
-#new-report-btn {
-  margin-top: 28px;
-  background: var(--text);
-  border: none;
-  border-radius: 14px;
-  color: var(--card);
-  padding: 12px 28px;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 0.04em;
-}
-
-/* ── LOADING OVERLAY ── */
+/* ── LOADING ── */
 #loading {
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
+  position: fixed; inset: 0;
+  background: #EDE8DF;
   z-index: 3000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  transition: opacity 0.5s;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 14px;
+  transition: opacity 0.4s;
 }
 #loading.hidden { opacity: 0; pointer-events: none; }
 .spinner {
-  width: 36px; height: 36px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
+  width: 32px; height: 32px;
+  border: 2.5px solid #DDD6CA;
+  border-top-color: #C0392B;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-#loading p { color: var(--muted); font-size: 13px; font-weight: 600; }
+#loading p { font-size: 12px; color: #9A9080; font-weight: 600; }
 
-/* ── LEAFLET OVERRIDES ── */
-.leaflet-control-zoom a {
-  background: var(--card) !important;
-  color: var(--text) !important;
-  border-color: var(--border) !important;
-  font-weight: 700 !important;
+/* ── SUCCESS ── */
+#success-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(237,232,223,0.97);
+  z-index: 2000;
+  flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 40px;
 }
-.leaflet-control-zoom a:hover { background: var(--bg) !important; }
-.leaflet-tile { filter: saturate(0.7) brightness(1.04); }
+#success-overlay.show { display: flex; }
+#success-icon {
+  width: 56px; height: 56px;
+  background: #27AE60;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 24px;
+  margin-bottom: 20px;
+}
+#success-overlay h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px; font-weight: 700;
+  color: #2E2820; margin-bottom: 10px;
+}
+#success-overlay p { font-size: 14px; color: #7A6F65; line-height: 1.7; }
+#success-handle { display: block; margin-top: 16px; font-size: 12px; font-weight: 700; color: #27AE60; letter-spacing: 0.06em; }
+#new-report-btn {
+  margin-top: 28px;
+  background: #2E2820; border: none; border-radius: 14px;
+  color: #F7F2EA; padding: 12px 28px;
+  font-size: 13px; font-weight: 700;
+  cursor: pointer; font-family: 'Inter', sans-serif;
+}
 
-/* Custom marker pulse */
+/* Marker pulse */
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
+  0% { transform: scale(1); opacity: 0.6; }
   70% { transform: scale(2.5); opacity: 0; }
   100% { transform: scale(1); opacity: 0; }
 }
 .pulse-ring {
-  position: absolute;
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  background: var(--accent);
-  opacity: 0.5;
+  position: absolute; width: 20px; height: 20px;
+  border-radius: 50%; background: #E8A020;
   animation: pulse 1.5s ease-out infinite;
   top: -4px; left: -4px;
 }
@@ -391,22 +266,22 @@ textarea { resize: none; height: 70px; }
 
 <div id="loading">
   <div class="spinner"></div>
-  <p>Geolocalizzazione in corso…</p>
+  <p>Geolocalizzazione…</p>
 </div>
 
 <div id="success-overlay">
-  <h2>✓ Segnalazione inviata.</h2>
-  <p>Grazie — la verificheremo e la aggiungeremo<br>al database con il tuo nome.</p>
-  <div class="tag">@streetsmart.nav</div>
+  <div id="success-icon">✓</div>
+  <h2>Segnalazione inviata.</h2>
+  <p>Grazie — la verificheremo e la aggiungeremo al database.</p>
+  <span id="success-handle">@streetsmart.nav</span>
   <button id="new-report-btn" onclick="resetForm()">+ Segnala un'altra strada</button>
 </div>
 
 <div id="app">
 
-  <!-- Header -->
   <div id="header">
-    <div style="display:flex;align-items:center;gap:10px">
-      <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none">
         <circle cx="20" cy="20" r="18" stroke="#3A3530" stroke-width="2" fill="none"/>
         <circle cx="20" cy="20" r="3" fill="#3A3530"/>
         <line x1="20" y1="20" x2="20" y2="6" stroke="#3A3530" stroke-width="1.5"/>
@@ -417,156 +292,86 @@ textarea { resize: none; height: 70px; }
         <line x1="20" y1="20" x2="7.9" y2="13" stroke="#3A3530" stroke-width="1.5"/>
         <polygon points="20,3 21.5,7 25.5,7 22.5,9.5 23.5,13.5 20,11 16.5,13.5 17.5,9.5 14.5,7 18.5,7" fill="#C0392B"/>
       </svg>
-      <span class="brand-text">StreetSmart</span>
+      <span class="brand-name">StreetSmart</span>
     </div>
-    <span id="header-title">Segnala una strada</span>
     <button id="locate-btn" onclick="locateUser()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/>
       </svg>
-      GPS
+      Dove sono
     </button>
   </div>
 
-  <!-- Map -->
   <div id="map-container">
     <div id="map"></div>
-    <div id="map-hint">📍 Tocca la mappa per selezionare la strada</div>
-    <div id="point-badge">📍 Punto selezionato — compila il form ↓</div>
+    <div id="map-hint">📍 Tocca la strada da segnalare</div>
+    <div id="street-badge"></div>
   </div>
 
-  <!-- Bottom panel -->
   <div id="panel">
-    <div id="panel-header" onclick="togglePanel()">
-      <h2>📋 Dettagli segnalazione</h2>
-      <span id="panel-toggle">▲</span>
-    </div>
+    <form id="form" action="https://formspree.io/f/mrernnwd" method="POST">
+      <input type="hidden" name="form_type" value="segnalazione">
+      <input type="hidden" name="lat" id="input-lat">
+      <input type="hidden" name="lng" id="input-lng">
+      <input type="hidden" name="strada" id="input-strada">
+      <input type="hidden" name="quartiere" id="input-quartiere">
+      <input type="hidden" name="classificazione" id="input-classificazione">
 
-    <div id="form-inner">
-      <form id="form" action="https://formspree.io/f/mrernnwd" method="POST">
+      <div class="error-msg" id="coords-error">Prima seleziona un punto sulla mappa</div>
 
-        <!-- Hidden geo fields -->
-        <input type="hidden" name="lat" id="input-lat">
-        <input type="hidden" name="lng" id="input-lng">
-        <input type="hidden" name="classificazione" id="classificazione_input">
-        <input type="hidden" name="_subject" value="StreetSmart — Nuova segnalazione geo">
-        <input type="hidden" name="form_type" value="segnalazione">
+      <!-- 5 colori -->
+      <div class="colori">
+        <button type="button" class="colore-btn" data-value="nero" data-label="Multicarreggiata, alta velocità">
+          <div class="colore-dot" style="background:#1C1C1A"></div>
+          <span>Nero</span>
+        </button>
+        <button type="button" class="colore-btn" data-value="rosso" data-label="Trafficata, nessuna ciclabile">
+          <div class="colore-dot" style="background:#C0392B"></div>
+          <span>Rosso</span>
+        </button>
+        <button type="button" class="colore-btn" data-value="giallo" data-label="Tranquilla, senza ciclabile">
+          <div class="colore-dot" style="background:#E8A020"></div>
+          <span>Giallo</span>
+        </button>
+        <button type="button" class="colore-btn" data-value="verde" data-label="Pista ciclabile presente">
+          <div class="colore-dot" style="background:#27AE60"></div>
+          <span>Verde</span>
+        </button>
+        <button type="button" class="colore-btn" data-value="blu" data-label="ZTL o pedonale">
+          <div class="colore-dot" style="background:#2980B9"></div>
+          <span>Blu</span>
+        </button>
+      </div>
 
-        <!-- Coords display -->
-        <label>Coordinate (tocca la mappa)</label>
-        <div class="coords-row">
-          <input type="text" id="display-lat" placeholder="Lat —" readonly>
-          <input type="text" id="display-lng" placeholder="Lng —" readonly>
-        </div>
-        <div class="error-msg" id="coords-error">Seleziona un punto sulla mappa</div>
+      <div id="criteria"></div>
+      <div class="error-msg" id="color-error">Seleziona un colore</div>
 
-        <label>Nome della strada *</label>
-        <input type="text" name="strada" id="input-strada" placeholder="Es. Via Merulana" required>
+      <textarea name="note" placeholder="Note (facoltativo) — es. 4 corsie, nessuna ciclabile…"></textarea>
 
-        <label>Quartiere *</label>
-        <input type="text" name="quartiere" id="input-quartiere" placeholder="Es. Esquilino" required>
-
-        <label>Municipio</label>
-        <select name="municipio">
-          <option value="">Seleziona</option>
-          <option>I — Centro Storico</option>
-          <option>II — Parioli / Flaminio</option>
-          <option>III — Montesacro</option>
-          <option>IV — Tiburtino</option>
-          <option>V — Prenestino</option>
-          <option>VI — Tor Bella Monaca</option>
-          <option>VII — Appio / Tuscolano</option>
-          <option>VIII — Ostia</option>
-          <option>IX — EUR</option>
-          <option>X — Ostia Lido</option>
-          <option>XI — Arvalia / Portuense</option>
-          <option>XII — Monteverde</option>
-          <option>XIII — Aurelia</option>
-          <option>XIV — Monte Mario</option>
-          <option>XV — Cassia / Flaminia</option>
-        </select>
-
-        <label>Classificazione *</label>
-        <div class="colori" id="colori">
-          <button type="button" class="colore-btn" data-value="nero">
-            <div class="dot-big" style="background:#1C1C1A;"></div>
-            <span>Nero</span>
-          </button>
-          <button type="button" class="colore-btn" data-value="rosso">
-            <div class="dot-big" style="background:#C0392B;"></div>
-            <span>Rosso</span>
-          </button>
-          <button type="button" class="colore-btn" data-value="giallo">
-            <div class="dot-big" style="background:#E8A020;"></div>
-            <span>Giallo</span>
-          </button>
-          <button type="button" class="colore-btn" data-value="verde">
-            <div class="dot-big" style="background:#27AE60;"></div>
-            <span>Verde</span>
-          </button>
-          <button type="button" class="colore-btn" data-value="blu">
-            <div class="dot-big" style="background:#2980B9;"></div>
-            <span>Blu</span>
-          </button>
-        </div>
-
-        <!-- Criteria box — shows on selection -->
-        <div id="criteria-box">
-          <div class="criteria-item" id="c-nero">⚫ <strong>Multicarreggiata</strong> ad alta velocità — nessuna protezione ciclisti</div>
-          <div class="criteria-item" id="c-rosso">🔴 <strong>Strada trafficata</strong> senza pista ciclabile</div>
-          <div class="criteria-item" id="c-giallo">🟡 <strong>Strada urbana tranquilla</strong> — traffico limitato, spesso senso unico</div>
-          <div class="criteria-item" id="c-verde">🟢 <strong>Pista ciclabile presente</strong> e separata dal traffico</div>
-          <div class="criteria-item" id="c-blu">🔵 <strong>ZTL / pedonale</strong> — poco traffico auto, alto flusso pedoni</div>
-        </div>
-
-        <div class="error-msg" id="color-error">Seleziona una classificazione</div>
-
-        <label>Perché questa classificazione?</label>
-        <textarea name="note" placeholder="Es. 4 corsie, nessuna ciclabile, traffico veloce…"></textarea>
-
-        <label>Il tuo Instagram</label>
-        <input type="text" name="instagram" placeholder="@tuonome">
-
-        <button type="submit" id="submit-btn">🚴 Invia segnalazione</button>
-        <div class="disclaimer">Ogni segnalazione viene verificata prima di entrare nel database.</div>
-
-      </form>
-    </div>
+      <button type="submit" id="submit-btn">Invia segnalazione</button>
+    </form>
   </div>
 </div>
 
 <script>
-// ── STATE ──
 let map, userMarker, selectedMarker;
 let selectedLat = null, selectedLng = null;
 let selectedColor = null;
-let panelOpen = true;
 
-// ── MAP INIT ──
 function initMap(lat, lng) {
-  map = L.map('map', {
-    zoomControl: true,
-    attributionControl: false,
-  }).setView([lat, lng], 16);
+  map = L.map('map', { zoomControl: true, attributionControl: false })
+         .setView([lat, lng], 16);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    attribution: '© CartoDB',
   }).addTo(map);
 
-  // User position marker
   placeUserMarker(lat, lng);
-
-  // Hide loading
   document.getElementById('loading').classList.add('hidden');
 
-  // Map click handler
   map.on('click', function(e) {
     placeSelectedMarker(e.latlng.lat, e.latlng.lng);
-    // Reverse geocode to auto-fill street name
     reverseGeocode(e.latlng.lat, e.latlng.lng);
-    // Open panel if collapsed
-    if (!panelOpen) togglePanel();
   });
 }
 
@@ -576,44 +381,32 @@ function placeUserMarker(lat, lng) {
     className: '',
     html: `<div style="position:relative;width:12px;height:12px;">
       <div class="pulse-ring"></div>
-      <div style="width:12px;height:12px;border-radius:50%;background:#f4a261;border:2px solid #fff;position:relative;z-index:1;"></div>
+      <div style="width:12px;height:12px;border-radius:50%;background:#E8A020;border:2px solid #fff;position:relative;z-index:1;"></div>
     </div>`,
-    iconSize: [12, 12],
-    iconAnchor: [6, 6],
+    iconSize: [12, 12], iconAnchor: [6, 6],
   });
   userMarker = L.marker([lat, lng], { icon, zIndexOffset: 100 }).addTo(map);
 }
 
 function placeSelectedMarker(lat, lng) {
   if (selectedMarker) map.removeLayer(selectedMarker);
-
+  const color = selectedColor
+    ? { nero:'#1C1C1A', rosso:'#C0392B', giallo:'#E8A020', verde:'#27AE60', blu:'#2980B9' }[selectedColor]
+    : '#C0392B';
   const icon = L.divIcon({
     className: '',
-    html: `<div style="width:20px;height:20px;border-radius:50%;background:#e63946;border:3px solid #fff;box-shadow:0 2px 8px rgba(230,57,70,0.6);"></div>`,
-    iconSize: [20, 20],
-    iconAnchor: [10, 10],
+    html: `<div style="width:22px;height:22px;border-radius:50%;background:${color};border:3px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,0.25);"></div>`,
+    iconSize: [22, 22], iconAnchor: [11, 11],
   });
   selectedMarker = L.marker([lat, lng], { icon }).addTo(map);
-
   selectedLat = lat;
   selectedLng = lng;
-
-  // Update form fields
   document.getElementById('input-lat').value = lat.toFixed(6);
   document.getElementById('input-lng').value = lng.toFixed(6);
-  document.getElementById('display-lat').value = lat.toFixed(5);
-  document.getElementById('display-lng').value = lng.toFixed(5);
-
-  // Hide hint, show badge
   document.getElementById('map-hint').classList.add('hidden');
-  const badge = document.getElementById('point-badge');
-  badge.style.display = 'block';
-  setTimeout(() => { badge.style.display = 'none'; }, 3000);
-
   document.getElementById('coords-error').style.display = 'none';
 }
 
-// ── REVERSE GEOCODE ──
 async function reverseGeocode(lat, lng) {
   try {
     const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1`, {
@@ -623,137 +416,93 @@ async function reverseGeocode(lat, lng) {
     const addr = data.address || {};
     const road = addr.road || addr.pedestrian || addr.path || '';
     const suburb = addr.suburb || addr.neighbourhood || addr.quarter || '';
-
-    if (road && !document.getElementById('input-strada').value) {
-      document.getElementById('input-strada').value = road;
-    }
-    if (suburb && !document.getElementById('input-quartiere').value) {
-      document.getElementById('input-quartiere').value = suburb;
-    }
-  } catch(e) { /* silent fail */ }
+    document.getElementById('input-strada').value = road;
+    document.getElementById('input-quartiere').value = suburb;
+    const badge = document.getElementById('street-badge');
+    badge.textContent = road || 'Punto selezionato';
+    badge.style.display = 'block';
+    setTimeout(() => { badge.style.display = 'none'; }, 3000);
+  } catch(e) {}
 }
 
-// ── LOCATE USER ──
 function locateUser() {
   const btn = document.getElementById('locate-btn');
-  btn.textContent = '…';
   btn.disabled = true;
-
-  if (!navigator.geolocation) {
-    alert('Il tuo browser non supporta la geolocalizzazione.');
-    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg> GPS';
-    btn.disabled = false;
-    return;
-  }
-
-  navigator.geolocation.getCurrentPosition(
+  btn.textContent = '…';
+  navigator.geolocation?.getCurrentPosition(
     (pos) => {
-      const lat = pos.coords.latitude;
-      const lng = pos.coords.longitude;
-      if (map) {
-        map.setView([lat, lng], 17);
-        placeUserMarker(lat, lng);
-      } else {
-        initMap(lat, lng);
-      }
-      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg> GPS`;
+      const { latitude: lat, longitude: lng } = pos.coords;
+      if (map) { map.setView([lat, lng], 17); placeUserMarker(lat, lng); }
+      else initMap(lat, lng);
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg> Dove sono`;
       btn.disabled = false;
     },
-    (err) => {
-      console.warn('Geolocation error:', err);
-      if (!map) initMap(41.9028, 12.4964); // Roma fallback
-      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg> GPS`;
+    () => {
+      if (!map) initMap(41.9028, 12.4964);
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg> Dove sono`;
       btn.disabled = false;
     },
     { enableHighAccuracy: true, timeout: 8000 }
   );
 }
 
-// ── PANEL TOGGLE ──
-function togglePanel() {
-  panelOpen = !panelOpen;
-  const panel = document.getElementById('panel');
-  panel.classList.toggle('collapsed', !panelOpen);
-}
-
-// ── COLOR BUTTONS ──
 document.querySelectorAll('.colore-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.colore-btn').forEach(b => b.classList.remove('selected'));
-    document.querySelectorAll('.criteria-item').forEach(c => c.classList.remove('active'));
     btn.classList.add('selected');
     selectedColor = btn.dataset.value;
-    document.getElementById('classificazione_input').value = selectedColor;
+    document.getElementById('input-classificazione').value = selectedColor;
+    document.getElementById('criteria').textContent = btn.dataset.label;
     document.getElementById('color-error').style.display = 'none';
-    const crit = document.getElementById('c-' + selectedColor);
-    if (crit) crit.classList.add('active');
+    // Update marker color if already placed
+    if (selectedLat) placeSelectedMarker(selectedLat, selectedLng);
   });
 });
 
-// ── FORM SUBMIT ──
 document.getElementById('form').addEventListener('submit', async function(e) {
   e.preventDefault();
-
   let valid = true;
-
-  if (!selectedLat) {
-    document.getElementById('coords-error').style.display = 'block';
-    valid = false;
-  }
-  if (!selectedColor) {
-    document.getElementById('color-error').style.display = 'block';
-    valid = false;
-  }
+  if (!selectedLat) { document.getElementById('coords-error').style.display = 'block'; valid = false; }
+  if (!selectedColor) { document.getElementById('color-error').style.display = 'block'; valid = false; }
   if (!valid) return;
 
   const btn = document.getElementById('submit-btn');
   btn.disabled = true;
-  btn.textContent = 'Invio in corso…';
+  btn.textContent = 'Invio…';
 
-  const data = new FormData(e.target);
-  const response = await fetch(e.target.action, {
+  const res = await fetch(e.target.action, {
     method: 'POST',
-    body: data,
+    body: new FormData(e.target),
     headers: { 'Accept': 'application/json' }
   });
 
-  if (response.ok) {
+  if (res.ok) {
     document.getElementById('success-overlay').classList.add('show');
   } else {
     btn.disabled = false;
-    btn.textContent = '🚴 Invia segnalazione';
-    alert('Errore. Riprova o scrivici in DM @streetsmart.nav');
+    btn.textContent = 'Invia segnalazione';
+    alert('Errore. Riprova o scrivici @streetsmart.nav');
   }
 });
 
-// ── RESET ──
 function resetForm() {
   document.getElementById('success-overlay').classList.remove('show');
   document.getElementById('form').reset();
-  selectedColor = null;
-  selectedLat = null;
-  selectedLng = null;
-  document.getElementById('classificazione_input').value = '';
-  document.getElementById('display-lat').value = '';
-  document.getElementById('display-lng').value = '';
+  selectedColor = null; selectedLat = null; selectedLng = null;
   document.querySelectorAll('.colore-btn').forEach(b => b.classList.remove('selected'));
-  if (selectedMarker) { map.removeLayer(selectedMarker); selectedMarker = null; }
+  document.getElementById('criteria').textContent = '';
   document.getElementById('map-hint').classList.remove('hidden');
+  if (selectedMarker) { map.removeLayer(selectedMarker); selectedMarker = null; }
   document.getElementById('submit-btn').disabled = false;
-  document.getElementById('submit-btn').textContent = '🚴 Invia segnalazione';
+  document.getElementById('submit-btn').textContent = 'Invia segnalazione';
 }
 
-// ── STARTUP ──
 window.addEventListener('load', () => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (pos) => initMap(pos.coords.latitude, pos.coords.longitude),
-      () => initMap(41.9028, 12.4964), // Roma centro fallback
-      { enableHighAccuracy: true, timeout: 6000 }
-    );
-  } else {
-    initMap(41.9028, 12.4964);
-  }
+  navigator.geolocation?.getCurrentPosition(
+    p => initMap(p.coords.latitude, p.coords.longitude),
+    () => initMap(41.9028, 12.4964),
+    { enableHighAccuracy: true, timeout: 6000 }
+  ) ?? initMap(41.9028, 12.4964);
 });
 </script>
 </body>
