@@ -6,27 +6,28 @@
 <title>Segnala una strada — StreetSmart</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0d0d0d;
-  --card: #161616;
-  --border: #272727;
-  --text: #f0f0f0;
-  --muted: #666;
-  --accent: #f4a261;
-  --accent-hover: #e8935a;
-  --nero: #444;
-  --rosso: #e63946;
-  --giallo: #f4a261;
-  --verde: #2a9d8f;
-  --blu: #457b9d;
+  --bg: #EDE8DF;
+  --card: #F7F2EA;
+  --border: #DDD6CA;
+  --text: #2E2820;
+  --muted: #9A9080;
+  --accent: #C0392B;
+  --accent-hover: #A93226;
+  --nero: #1C1C1A;
+  --rosso: #C0392B;
+  --giallo: #E8A020;
+  --verde: #27AE60;
+  --blu: #2980B9;
 }
 
 html, body {
   height: 100%;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
   overflow: hidden;
@@ -45,32 +46,39 @@ html, body {
   flex-shrink: 0;
   background: var(--card);
   border-bottom: 1px solid var(--border);
-  padding: 12px 16px;
+  padding: 11px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  box-shadow: 0 1px 8px rgba(58,53,48,0.07);
 }
-.logo-dots { display: flex; gap: 6px; align-items: center; }
-.dot { width: 10px; height: 10px; border-radius: 50%; }
-.brand-text { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; color: var(--muted); margin-left: 4px; }
-#header-title { font-size: 14px; font-weight: 700; color: var(--text); }
+.logo-dots { display: flex; gap: 5px; align-items: center; }
+.dot { width: 9px; height: 9px; border-radius: 50%; }
+.brand-text { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: var(--text); margin-left: 6px; text-transform: uppercase; }
+#header-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--muted);
+}
 #locate-btn {
-  background: var(--border);
-  border: none;
-  border-radius: 8px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
   color: var(--text);
-  padding: 7px 12px;
-  font-size: 12px;
+  padding: 6px 12px;
+  font-size: 11px;
   font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s;
+  font-family: 'Inter', sans-serif;
 }
-#locate-btn:hover { background: #333; }
-#locate-btn svg { width: 14px; height: 14px; }
+#locate-btn:hover { border-color: var(--accent); color: var(--accent); }
+#locate-btn svg { width: 13px; height: 13px; }
 
 /* ── MAP ── */
 #map-container {
@@ -89,10 +97,10 @@ html, body {
   top: 12px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(13,13,13,0.88);
+  background: rgba(247,242,234,0.92);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   font-size: 12px;
   font-weight: 600;
   color: var(--muted);
@@ -101,6 +109,7 @@ html, body {
   white-space: nowrap;
   backdrop-filter: blur(8px);
   transition: opacity 0.4s;
+  box-shadow: 0 2px 12px rgba(58,53,48,0.1);
 }
 #map-hint.hidden { opacity: 0; }
 
@@ -111,9 +120,9 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   background: var(--card);
-  border: 1px solid var(--accent);
+  border: 1.5px solid var(--accent);
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   font-size: 12px;
   font-weight: 700;
   color: var(--accent);
@@ -121,6 +130,7 @@ html, body {
   white-space: nowrap;
   display: none;
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(192,57,43,0.15);
 }
 
 /* ── BOTTOM PANEL ── */
@@ -132,10 +142,10 @@ html, body {
   max-height: 55vh;
   transition: max-height 0.3s ease;
 }
-#panel.collapsed { max-height: 56px; }
+#panel.collapsed { max-height: 52px; }
 
 #panel-header {
-  padding: 16px;
+  padding: 14px 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -143,9 +153,14 @@ html, body {
   border-bottom: 1px solid var(--border);
   user-select: none;
 }
-#panel-header h2 { font-size: 15px; font-weight: 800; }
+#panel-header h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
 #panel-toggle {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--muted);
   transition: transform 0.3s;
   line-height: 1;
@@ -160,7 +175,7 @@ label {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.14em;
   color: var(--muted);
   margin-bottom: 6px;
   margin-top: 16px;
@@ -169,18 +184,29 @@ label:first-child { margin-top: 0; }
 
 input, select, textarea {
   width: 100%;
-  background: #111;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
   color: var(--text);
   font-size: 14px;
   padding: 11px 13px;
   outline: none;
-  font-family: inherit;
-  transition: border-color 0.2s;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s, background 0.2s;
+  appearance: none;
 }
-input:focus, select:focus, textarea:focus { border-color: var(--accent); }
-select option { background: var(--card); }
+input::placeholder, textarea::placeholder { color: #B0A898; }
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  background: #F3EDE4;
+}
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239A9080' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 34px;
+  cursor: pointer;
+}
 textarea { resize: none; height: 70px; }
 
 /* Coords row */
@@ -198,80 +224,87 @@ textarea { resize: none; height: 70px; }
 /* Classification buttons */
 .colori {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 6px;
   margin-top: 4px;
 }
 .colore-btn {
   border: 2px solid transparent;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 10px 4px 8px;
   cursor: pointer;
   font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  transition: transform 0.15s, border-color 0.15s;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
 }
 .colore-btn:hover { transform: scale(1.04); }
-.colore-btn.selected { border-color: #fff; transform: scale(1.07); }
+.colore-btn.selected {
+  border-color: var(--text);
+  box-shadow: 0 2px 10px rgba(58,53,48,0.15);
+  transform: scale(1.07);
+}
 .colore-btn .dot-big { width: 18px; height: 18px; border-radius: 50%; }
 
 /* Submit */
 #submit-btn {
   margin-top: 20px;
   width: 100%;
-  background: var(--accent);
-  color: #0d0d0d;
+  background: var(--text);
+  color: var(--card);
   border: none;
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 14px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
-  font-family: inherit;
+  font-family: 'Inter', sans-serif;
   transition: background 0.2s;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.04em;
 }
-#submit-btn:hover { background: var(--accent-hover); }
-#submit-btn:disabled { background: #333; color: var(--muted); cursor: not-allowed; }
+#submit-btn:hover { background: #1A1410; }
+#submit-btn:disabled { background: #C8C0B4; color: #8A8078; cursor: not-allowed; }
 
 .disclaimer {
   margin-top: 10px;
   font-size: 10px;
-  color: #444;
+  color: var(--muted);
   text-align: center;
 }
 
 /* Criteria box */
 #criteria-box {
   margin-top: 8px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
 }
 .criteria-item {
   display: none;
   padding: 10px 13px;
   font-size: 12px;
-  line-height: 1.4;
-  color: #bbb;
-  background: #111;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--bg);
 }
 .criteria-item.active { display: block; }
 .criteria-item strong { color: var(--text); }
 
-.error-msg { color: #e63946; font-size: 11px; margin-top: 6px; display: none; }
+.error-msg { color: var(--accent); font-size: 11px; margin-top: 6px; display: none; font-weight: 500; }
 
 /* ── SUCCESS ── */
 #success-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(13,13,13,0.95);
+  background: rgba(237,232,223,0.97);
   z-index: 2000;
   align-items: center;
   justify-content: center;
@@ -280,20 +313,27 @@ textarea { resize: none; height: 70px; }
   padding: 40px;
 }
 #success-overlay.show { display: flex; }
-#success-overlay h2 { font-size: 32px; margin-bottom: 12px; }
-#success-overlay p { color: var(--muted); font-size: 15px; line-height: 1.6; }
-#success-overlay .tag { margin-top: 20px; color: var(--accent); font-weight: 800; font-size: 16px; }
+#success-overlay h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+#success-overlay p { color: var(--muted); font-size: 15px; line-height: 1.7; }
+#success-overlay .tag { margin-top: 20px; color: var(--verde); font-weight: 700; font-size: 15px; letter-spacing: 0.06em; }
 #new-report-btn {
   margin-top: 28px;
-  background: var(--border);
+  background: var(--text);
   border: none;
-  border-radius: 8px;
-  color: var(--text);
-  padding: 12px 24px;
-  font-size: 14px;
+  border-radius: 14px;
+  color: var(--card);
+  padding: 12px 28px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  font-family: inherit;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 /* ── LOADING OVERLAY ── */
@@ -325,11 +365,10 @@ textarea { resize: none; height: 70px; }
   background: var(--card) !important;
   color: var(--text) !important;
   border-color: var(--border) !important;
+  font-weight: 700 !important;
 }
-.leaflet-control-zoom a:hover {
-  background: var(--border) !important;
-}
-.leaflet-tile { filter: brightness(0.85) saturate(0.9); }
+.leaflet-control-zoom a:hover { background: var(--bg) !important; }
+.leaflet-tile { filter: saturate(0.85) brightness(1.02); }
 
 /* Custom marker pulse */
 @keyframes pulse {
@@ -342,7 +381,7 @@ textarea { resize: none; height: 70px; }
   width: 20px; height: 20px;
   border-radius: 50%;
   background: var(--accent);
-  opacity: 0.6;
+  opacity: 0.5;
   animation: pulse 1.5s ease-out infinite;
   top: -4px; left: -4px;
 }
@@ -367,14 +406,18 @@ textarea { resize: none; height: 70px; }
   <!-- Header -->
   <div id="header">
     <div style="display:flex;align-items:center;gap:10px">
-      <div class="logo-dots">
-        <div class="dot" style="background:#1a1a1a;border:1px solid #555"></div>
-        <div class="dot" style="background:#e63946"></div>
-        <div class="dot" style="background:#f4a261"></div>
-        <div class="dot" style="background:#2a9d8f"></div>
-        <div class="dot" style="background:#457b9d"></div>
-      </div>
-      <span class="brand-text">STREETSMART</span>
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="#3A3530" stroke-width="2" fill="none"/>
+        <circle cx="20" cy="20" r="3" fill="#3A3530"/>
+        <line x1="20" y1="20" x2="20" y2="6" stroke="#3A3530" stroke-width="1.5"/>
+        <line x1="20" y1="20" x2="32.1" y2="27" stroke="#3A3530" stroke-width="1.5"/>
+        <line x1="20" y1="20" x2="7.9" y2="27" stroke="#3A3530" stroke-width="1.5"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#3A3530" stroke-width="1.5"/>
+        <line x1="20" y1="20" x2="32.1" y2="13" stroke="#3A3530" stroke-width="1.5"/>
+        <line x1="20" y1="20" x2="7.9" y2="13" stroke="#3A3530" stroke-width="1.5"/>
+        <polygon points="20,3 21.5,7 25.5,7 22.5,9.5 23.5,13.5 20,11 16.5,13.5 17.5,9.5 14.5,7 18.5,7" fill="#C0392B"/>
+      </svg>
+      <span class="brand-text">StreetSmart</span>
     </div>
     <span id="header-title">Segnala una strada</span>
     <button id="locate-btn" onclick="locateUser()">
@@ -445,25 +488,25 @@ textarea { resize: none; height: 70px; }
 
         <label>Classificazione *</label>
         <div class="colori" id="colori">
-          <button type="button" class="colore-btn" data-value="nero" style="background:#1a1a1a;color:#ccc;">
-            <div class="dot-big" style="background:#555;"></div>
-            <span>NERO</span>
+          <button type="button" class="colore-btn" data-value="nero">
+            <div class="dot-big" style="background:#1C1C1A;"></div>
+            <span>Nero</span>
           </button>
-          <button type="button" class="colore-btn" data-value="rosso" style="background:#e6394622;color:#e63946;">
-            <div class="dot-big" style="background:#e63946;"></div>
-            <span>ROSSO</span>
+          <button type="button" class="colore-btn" data-value="rosso">
+            <div class="dot-big" style="background:#C0392B;"></div>
+            <span>Rosso</span>
           </button>
-          <button type="button" class="colore-btn" data-value="giallo" style="background:#f4a26122;color:#f4a261;">
-            <div class="dot-big" style="background:#f4a261;"></div>
-            <span>GIALLO</span>
+          <button type="button" class="colore-btn" data-value="giallo">
+            <div class="dot-big" style="background:#E8A020;"></div>
+            <span>Giallo</span>
           </button>
-          <button type="button" class="colore-btn" data-value="verde" style="background:#2a9d8f22;color:#2a9d8f;">
-            <div class="dot-big" style="background:#2a9d8f;"></div>
-            <span>VERDE</span>
+          <button type="button" class="colore-btn" data-value="verde">
+            <div class="dot-big" style="background:#27AE60;"></div>
+            <span>Verde</span>
           </button>
-          <button type="button" class="colore-btn" data-value="blu" style="background:#457b9d22;color:#457b9d;">
-            <div class="dot-big" style="background:#457b9d;"></div>
-            <span>BLU</span>
+          <button type="button" class="colore-btn" data-value="blu">
+            <div class="dot-big" style="background:#2980B9;"></div>
+            <span>Blu</span>
           </button>
         </div>
 
@@ -484,7 +527,7 @@ textarea { resize: none; height: 70px; }
         <label>Il tuo Instagram</label>
         <input type="text" name="instagram" placeholder="@tuonome">
 
-        <button type="submit" class="btn" id="submit-btn">🚴 Invia segnalazione</button>
+        <button type="submit" id="submit-btn">🚴 Invia segnalazione</button>
         <div class="disclaimer">Ogni segnalazione viene verificata prima di entrare nel database.</div>
 
       </form>
