@@ -1,4 +1,4 @@
-const CACHE = 'streetsmart-v1';
+const CACHE = 'streetsmart-v2';
 const ASSETS = [
   '/Streetsmart-Sentille/',
   '/Streetsmart-Sentille/index.html',
