@@ -6,8 +6,8 @@
   "scope": "/Streetsmart-Sentille/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0d0d0d",
-  "theme_color": "#0d0d0d",
+  "background_color": "#EAE4D8",
+  "theme_color": "#EAE4D8",
   "icons": [
     {
       "src": "icon-192.png",

@@ -12,8 +12,8 @@
 
 html, body {
   height: 100%;
-  font-family: 'Inter', sans-serif;
-  background: #D8D2C8;
+  font-family: 'Helvetica Neue', -apple-system, sans-serif;
+  background: #EAE4D8;
   color: #1E1810;
   overflow: hidden;
 }
@@ -29,7 +29,7 @@ html, body {
 #header {
   flex-shrink: 0;
   background: #EAE4D8;
-  border-bottom: 1px solid #C4BAA8;
+  border-bottom: 1px solid #D8D0C0;
   padding: 11px 16px;
   display: flex;
   align-items: center;
@@ -37,11 +37,16 @@ html, body {
   z-index: 1000;
 }
 .brand { display: flex; align-items: center; gap: 8px; }
-.brand-name { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1E1810; }
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1E1810;
+}
 #locate-btn {
-  background: #D8D2C8;
-  border: 1.5px solid #C4BAA8;
-  border-radius: 20px;
+  background: #FFFFFF;
+  border: 1px solid #D8D0C0;
+  border-radius: 8px;
   color: #1E1810;
   padding: 6px 14px;
   font-size: 11px;
@@ -50,8 +55,9 @@ html, body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Inter', sans-serif;
-  transition: border-color 0.2s;
+  font-family: inherit;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
 }
 #locate-btn:hover { border-color: #C0392B; color: #C0392B; }
 #locate-btn svg { width: 13px; height: 13px; }
@@ -59,31 +65,32 @@ html, body {
 /* ── MAP ── */
 #map-container { flex: 1 1 0; position: relative; min-height: 0; }
 #map { width: 100%; height: 100%; }
-.leaflet-tile { filter: saturate(0.75) brightness(1.03); }
+.leaflet-tile { filter: saturate(0.8) brightness(1.02); }
 .leaflet-control-zoom a {
   background: #EAE4D8 !important;
   color: #1E1810 !important;
-  border-color: #C4BAA8 !important;
+  border-color: #D8D0C0 !important;
   font-weight: 700 !important;
 }
+.leaflet-control-zoom a:hover { background: #FFFFFF !important; }
 
 #map-hint {
   position: absolute;
   top: 12px; left: 50%;
   transform: translateX(-50%);
-  background: rgba(247,242,234,0.95);
-  border: 1px solid #C4BAA8;
-  border-radius: 20px;
+  background: rgba(234,228,216,0.95);
+  border: 1px solid #D8D0C0;
+  border-radius: 12px;
   padding: 8px 18px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  color: #9A9080;
+  color: #8A8278;
   z-index: 500;
   pointer-events: none;
   white-space: nowrap;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   transition: opacity 0.3s;
-  box-shadow: 0 2px 10px rgba(58,53,48,0.1);
+  letter-spacing: 0.5px;
 }
 #map-hint.hidden { opacity: 0; }
 
@@ -93,23 +100,22 @@ html, body {
   top: 12px; left: 50%;
   transform: translateX(-50%);
   background: #EAE4D8;
-  border: 1.5px solid #C0392B;
-  border-radius: 20px;
+  border: 1px solid #C0392B;
+  border-radius: 12px;
   padding: 8px 18px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #1E1810;
   z-index: 500;
   white-space: nowrap;
   display: none;
-  box-shadow: 0 2px 12px rgba(192,57,43,0.15);
 }
 
 /* ── BOTTOM PANEL ── */
 #panel {
   flex-shrink: 0;
   background: #EAE4D8;
-  border-top: 1px solid #C4BAA8;
+  border-top: 1px solid #D8D0C0;
   padding: 20px 20px 28px;
   overflow-y: auto;
   max-height: 52vh;
@@ -118,37 +124,39 @@ html, body {
 /* ── COLORI ── */
 .colori {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 16px;
 }
 .colore-btn {
   flex: 1;
-  border: 2px solid transparent;
-  border-radius: 14px;
-  padding: 12px 4px 10px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 4px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  background: #D8D2C8;
-  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  gap: 5px;
+  font-family: inherit;
   font-size: 9px;
   font-weight: 700;
-  color: #1E1810;
-  transition: border-color 0.15s, transform 0.15s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.15s, opacity 0.15s;
 }
-.colore-btn:hover { transform: scale(1.03); }
+.colore-btn:hover { transform: scale(1.04); opacity: 0.88; }
 .colore-btn.selected {
-  border-color: #1E1810;
-  box-shadow: 0 2px 10px rgba(58,53,48,0.12);
+  outline: 2px solid #1E1810;
+  outline-offset: 2px;
+  transform: scale(1.06);
 }
-.colore-dot { width: 22px; height: 22px; border-radius: 50%; }
+.colore-dot { width: 20px; height: 20px; border-radius: 50%; display: none; }
 
 /* Criteria — shown below dots */
 #criteria {
   font-size: 12px;
-  color: #7A6F65;
+  color: #8A8278;
   line-height: 1.5;
   min-height: 18px;
   margin-bottom: 14px;
@@ -158,22 +166,22 @@ html, body {
 /* ── TEXTAREA ── */
 textarea {
   width: 100%;
-  background: #D8D2C8;
-  border: 1.5px solid #C4BAA8;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #D8D0C0;
+  border-radius: 8px;
   color: #1E1810;
   font-size: 14px;
   padding: 12px 14px;
   outline: none;
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   resize: none;
   height: 68px;
   transition: border-color 0.2s;
   margin-bottom: 12px;
   display: block;
 }
-textarea::placeholder { color: #B0A898; }
-textarea:focus { border-color: #C0392B; background: #F3EDE4; }
+textarea::placeholder { color: #8A8278; }
+textarea:focus { border-color: #C0392B; }
 
 /* ── SUBMIT ── */
 #submit-btn {
@@ -181,44 +189,45 @@ textarea:focus { border-color: #C0392B; background: #F3EDE4; }
   background: #1E1810;
   color: #EAE4D8;
   border: none;
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 15px;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   transition: background 0.2s;
+  letter-spacing: 0.5px;
 }
-#submit-btn:hover { background: #1A1410; }
-#submit-btn:disabled { background: #C8C0B4; cursor: not-allowed; }
+#submit-btn:hover { background: #2C2418; }
+#submit-btn:disabled { background: #8A8278; color: #EAE4D8; cursor: not-allowed; }
 
 .error-msg { color: #C0392B; font-size: 11px; margin-bottom: 10px; display: none; font-weight: 500; }
 
 /* ── LOADING ── */
 #loading {
   position: fixed; inset: 0;
-  background: #D8D2C8;
+  background: #EAE4D8;
   z-index: 3000;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  gap: 14px;
+  gap: 20px;
   transition: opacity 0.4s;
 }
 #loading.hidden { opacity: 0; pointer-events: none; }
-.spinner {
-  width: 32px; height: 32px;
-  border: 2.5px solid #C4BAA8;
-  border-top-color: #C0392B;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+#loading .brand-title {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1E1810;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
-#loading p { font-size: 12px; color: #9A9080; font-weight: 600; }
+#loading p { font-size: 10px; color: #8A8278; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; }
+.loading-dots { display: flex; gap: 10px; align-items: center; }
+.load-dot { width: 10px; height: 10px; border-radius: 50%; }
 
 /* ── SUCCESS ── */
 #success-overlay {
   display: none; position: fixed; inset: 0;
-  background: rgba(237,232,223,0.97);
+  background: rgba(234,228,216,0.97);
   z-index: 2000;
   flex-direction: column;
   align-items: center; justify-content: center;
@@ -226,26 +235,31 @@ textarea:focus { border-color: #C0392B; background: #F3EDE4; }
 }
 #success-overlay.show { display: flex; }
 #success-icon {
-  width: 56px; height: 56px;
+  width: 52px; height: 52px;
   background: #27AE60;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: #fff; font-size: 24px;
+  color: #fff; font-size: 22px;
   margin-bottom: 20px;
 }
 #success-overlay h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 30px; font-weight: 700;
+  font-family: Georgia, serif;
+  font-size: 28px; font-weight: bold;
   color: #1E1810; margin-bottom: 10px;
 }
-#success-overlay p { font-size: 14px; color: #7A6F65; line-height: 1.7; }
-#success-handle { display: block; margin-top: 16px; font-size: 12px; font-weight: 700; color: #27AE60; letter-spacing: 0.06em; }
+#success-overlay p { font-size: 14px; color: #8A8278; line-height: 1.7; }
+#success-handle {
+  display: block; margin-top: 16px;
+  font-size: 11px; font-weight: 700;
+  color: #C0392B; letter-spacing: 2px;
+  text-transform: uppercase;
+}
 #new-report-btn {
   margin-top: 28px;
-  background: #1E1810; border: none; border-radius: 14px;
+  background: #1E1810; border: none; border-radius: 8px;
   color: #EAE4D8; padding: 12px 28px;
-  font-size: 13px; font-weight: 700;
-  cursor: pointer; font-family: 'Inter', sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.5px;
+  cursor: pointer; font-family: inherit;
 }
 
 /* Marker pulse */
@@ -256,7 +270,7 @@ textarea:focus { border-color: #C0392B; background: #F3EDE4; }
 }
 .pulse-ring {
   position: absolute; width: 20px; height: 20px;
-  border-radius: 50%; background: #E8A020;
+  border-radius: 50%; background: #D4A574;
   animation: pulse 1.5s ease-out infinite;
   top: -4px; left: -4px;
 }
@@ -265,7 +279,14 @@ textarea:focus { border-color: #C0392B; background: #F3EDE4; }
 <body>
 
 <div id="loading">
-  <div class="spinner"></div>
+  <div class="brand-title">StreetSmart</div>
+  <div class="loading-dots">
+    <div class="load-dot" style="background:#1C1C1A"></div>
+    <div class="load-dot" style="background:#C0392B"></div>
+    <div class="load-dot" style="background:#E8A020"></div>
+    <div class="load-dot" style="background:#27AE60"></div>
+    <div class="load-dot" style="background:#2980B9"></div>
+  </div>
   <p>Geolocalizzazione…</p>
 </div>
 
@@ -321,26 +342,11 @@ textarea:focus { border-color: #C0392B; background: #F3EDE4; }
 
       <!-- 5 colori -->
       <div class="colori">
-        <button type="button" class="colore-btn" data-value="nero" data-label="Multicarreggiata, alta velocità">
-          <div class="colore-dot" style="background:#1C1C1A"></div>
-          <span>Nero</span>
-        </button>
-        <button type="button" class="colore-btn" data-value="rosso" data-label="Trafficata, nessuna ciclabile">
-          <div class="colore-dot" style="background:#C0392B"></div>
-          <span>Rosso</span>
-        </button>
-        <button type="button" class="colore-btn" data-value="giallo" data-label="Tranquilla, senza ciclabile">
-          <div class="colore-dot" style="background:#E8A020"></div>
-          <span>Giallo</span>
-        </button>
-        <button type="button" class="colore-btn" data-value="verde" data-label="Pista ciclabile presente">
-          <div class="colore-dot" style="background:#27AE60"></div>
-          <span>Verde</span>
-        </button>
-        <button type="button" class="colore-btn" data-value="blu" data-label="ZTL o pedonale">
-          <div class="colore-dot" style="background:#2980B9"></div>
-          <span>Blu</span>
-        </button>
+        <button type="button" class="colore-btn" data-value="nero" data-label="Multicarreggiata, alta velocità" style="background:#1C1C1A;color:#FFFFFF;">Nero</button>
+        <button type="button" class="colore-btn" data-value="rosso" data-label="Trafficata, nessuna ciclabile" style="background:#C0392B;color:#FFFFFF;">Rosso</button>
+        <button type="button" class="colore-btn" data-value="giallo" data-label="Tranquilla, senza ciclabile" style="background:#E8A020;color:#1E1810;">Giallo</button>
+        <button type="button" class="colore-btn" data-value="verde" data-label="Pista ciclabile presente" style="background:#27AE60;color:#FFFFFF;">Verde</button>
+        <button type="button" class="colore-btn" data-value="blu" data-label="ZTL o pedonale" style="background:#2980B9;color:#FFFFFF;">Blu</button>
       </div>
 
       <div id="criteria"></div>

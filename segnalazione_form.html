@@ -9,9 +9,9 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #EDE8DF;
-  color: #3A3530;
+  font-family: 'Helvetica Neue', -apple-system, sans-serif;
+  background: #EAE4D8;
+  color: #1E1810;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,32 +28,30 @@ body {
   margin-bottom: 36px;
 }
 .top-bar svg { flex-shrink: 0; }
-.top-bar-text { }
 .top-bar-name {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #3A3530;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1E1810;
   line-height: 1;
 }
-.top-bar-handle { font-size: 10px; color: #A09080; margin-top: 2px; }
+.top-bar-handle { font-size: 10px; color: #8A8278; margin-top: 3px; letter-spacing: 0.5px; }
 
 /* ── Card ── */
 .card {
-  background: #F7F2EA;
-  border-radius: 20px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #D8D0C0;
   padding: 32px 28px 28px;
   max-width: 460px;
   width: 100%;
-  box-shadow: 0 8px 40px rgba(58,53,48,0.12), 0 1px 4px rgba(58,53,48,0.06);
 }
 
 /* ── Intestazione ── */
 .card-eyebrow {
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #C0392B;
   display: flex;
@@ -65,21 +63,21 @@ body {
   content: '';
   display: block;
   width: 20px;
-  height: 1.5px;
+  height: 1px;
   background: #C0392B;
 }
 .card-title {
-  font-family: 'EB Garamond', serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #2E2820;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #1E1810;
   margin-bottom: 8px;
 }
 .card-sub {
   font-size: 13px;
-  color: #7A6F65;
-  line-height: 1.6;
+  color: #8A8278;
+  line-height: 1.65;
   margin-bottom: 28px;
 }
 
@@ -89,8 +87,8 @@ label {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #9A9080;
+  letter-spacing: 2px;
+  color: #8A8278;
   margin-bottom: 7px;
   margin-top: 20px;
 }
@@ -98,24 +96,21 @@ label:first-of-type { margin-top: 0; }
 
 input, select, textarea {
   width: 100%;
-  background: #EDE8DF;
-  border: 1.5px solid #DDD6CA;
-  border-radius: 12px;
-  color: #2E2820;
-  font-size: 15px;
-  padding: 13px 16px;
+  background: #FFFFFF;
+  border: 1px solid #D8D0C0;
+  border-radius: 8px;
+  color: #1E1810;
+  font-size: 14px;
+  padding: 12px 14px;
   outline: none;
-  transition: border-color 0.2s, background 0.2s;
-  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
+  font-family: inherit;
   appearance: none;
 }
-input::placeholder, textarea::placeholder { color: #B0A898; }
-input:focus, select:focus, textarea:focus {
-  border-color: #C0392B;
-  background: #F3EDE4;
-}
+input::placeholder, textarea::placeholder { color: #8A8278; }
+input:focus, select:focus, textarea:focus { border-color: #C0392B; }
 select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239A9080' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8278' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 38px;
@@ -127,36 +122,35 @@ textarea { resize: none; height: 84px; }
 .colori {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 6px;
   margin-top: 4px;
 }
 .colore-btn {
-  border: 2px solid transparent;
-  border-radius: 14px;
-  padding: 14px 6px 10px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 4px;
   cursor: pointer;
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  transition: transform 0.15s, opacity 0.15s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
-  background: #EDE8DF;
-  color: #3A3530;
-  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  gap: 6px;
+  font-family: inherit;
 }
-.colore-btn:hover { transform: scale(1.04); }
+.colore-btn:hover { transform: scale(1.04); opacity: 0.88; }
 .colore-btn.selected {
-  border-color: #3A3530;
-  box-shadow: 0 2px 12px rgba(58,53,48,0.15);
+  outline: 2px solid #1E1810;
+  outline-offset: 2px;
   transform: scale(1.06);
 }
 .colore-dot {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
@@ -164,32 +158,32 @@ textarea { resize: none; height: 84px; }
 .btn-submit {
   margin-top: 28px;
   width: 100%;
-  background: #3A3530;
-  color: #F7F2EA;
+  background: #1E1810;
+  color: #EAE4D8;
   border: none;
-  border-radius: 14px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 15px;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 0.04em;
-  transition: background 0.2s, transform 0.1s;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.btn-submit:hover { background: #2A2520; }
-.btn-submit:active { transform: scale(0.99); }
-.btn-submit:disabled { background: #C8C0B4; cursor: not-allowed; }
+.btn-submit:hover { background: #2C2418; }
+.btn-submit:disabled { background: #8A8278; color: #EAE4D8; cursor: not-allowed; }
 
 .disclaimer {
   margin-top: 12px;
   font-size: 10px;
-  color: #B0A898;
+  color: #8A8278;
   text-align: center;
   line-height: 1.6;
+  letter-spacing: 0.3px;
 }
 
 /* ── Errore ── */
@@ -208,31 +202,33 @@ textarea { resize: none; height: 84px; }
   padding: 24px 0 8px;
 }
 .success-icon {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   background: #27AE60;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 18px;
-  font-size: 24px;
+  color: #fff;
+  font-size: 22px;
 }
 .success h2 {
-  font-family: 'EB Garamond', serif;
+  font-family: Georgia, serif;
   font-size: 26px;
-  font-weight: 700;
-  color: #2E2820;
+  font-weight: bold;
+  color: #1E1810;
   margin-bottom: 10px;
 }
-.success p { font-size: 13px; color: #7A6F65; line-height: 1.7; }
+.success p { font-size: 13px; color: #8A8278; line-height: 1.7; }
 .success-handle {
   display: inline-block;
   margin-top: 18px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   color: #C0392B;
-  letter-spacing: 0.06em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 </style>
 </head>
@@ -251,7 +247,7 @@ textarea { resize: none; height: 84px; }
     <line x1="20" y1="20" x2="7.9" y2="13" stroke="#3A3530" stroke-width="1.5"/>
     <polygon points="20,3 21.5,7 25.5,7 22.5,9.5 23.5,13.5 20,11 16.5,13.5 17.5,9.5 14.5,7 18.5,7" fill="#C0392B"/>
   </svg>
-  <div class="top-bar-text">
+  <div>
     <div class="top-bar-name">StreetSmart</div>
     <div class="top-bar-handle">@streetsmart.nav</div>
   </div>
@@ -293,34 +289,13 @@ textarea { resize: none; height: 84px; }
 
     <label>Com'è questa strada? *</label>
     <div class="colori" id="colori">
-      <button type="button" class="colore-btn" data-value="nero">
-        <div class="colore-dot" style="background:#1C1C1A;"></div>
-        <span>Nero</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="rosso">
-        <div class="colore-dot" style="background:#C0392B;"></div>
-        <span>Rosso</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="giallo">
-        <div class="colore-dot" style="background:#E8A020;"></div>
-        <span>Giallo</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="verde">
-        <div class="colore-dot" style="background:#27AE60;"></div>
-        <span>Verde</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="blu">
-        <div class="colore-dot" style="background:#2980B9;"></div>
-        <span>Blu</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="verde-giallo">
-        <div class="colore-dot" style="background:linear-gradient(135deg,#27AE60,#E8A020);"></div>
-        <span>V-Giallo</span>
-      </button>
-      <button type="button" class="colore-btn" data-value="verde-blu">
-        <div class="colore-dot" style="background:linear-gradient(135deg,#27AE60,#2980B9);"></div>
-        <span>V-Blu</span>
-      </button>
+      <button type="button" class="colore-btn" data-value="nero" style="background:#1C1C1A;color:#FFFFFF;">Nero</button>
+      <button type="button" class="colore-btn" data-value="rosso" style="background:#C0392B;color:#FFFFFF;">Rosso</button>
+      <button type="button" class="colore-btn" data-value="giallo" style="background:#E8A020;color:#1E1810;">Giallo</button>
+      <button type="button" class="colore-btn" data-value="verde" style="background:#27AE60;color:#FFFFFF;">Verde</button>
+      <button type="button" class="colore-btn" data-value="blu" style="background:#2980B9;color:#FFFFFF;">Blu</button>
+      <button type="button" class="colore-btn" data-value="verde-giallo" style="background:#3AAD6A;color:#FFFFFF;">V-Giallo</button>
+      <button type="button" class="colore-btn" data-value="verde-blu" style="background:#2A94A0;color:#FFFFFF;">V-Blu</button>
     </div>
     <input type="hidden" name="classificazione" id="classificazione_input">
     <div class="error-msg" id="color-error">Seleziona una classificazione per continuare</div>
