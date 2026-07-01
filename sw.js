@@ -1,8 +1,9 @@
-const CACHE = 'streetsmart-v2';
+const CACHE = 'streetsmart-v3';
 const ASSETS = [
   '/Streetsmart-Sentille/',
   '/Streetsmart-Sentille/index.html',
   '/Streetsmart-Sentille/manifest.json',
+  '/Streetsmart-Sentille/streetsmart_roma.geojson',
   'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css',
   'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js',
 ];

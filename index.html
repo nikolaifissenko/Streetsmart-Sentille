@@ -93,6 +93,7 @@ html, body {
 #locate-btn:hover { border-color: var(--rosso); color: var(--rosso); }
 #locate-btn svg { width: 13px; height: 13px; }
 
+
 /* ── MAP ── */
 #map-container {
   flex: 1 1 0;
@@ -143,6 +144,49 @@ html, body {
   white-space: nowrap;
   display: none;
 }
+
+#db-stats {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(234,228,216,0.95);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.3;
+  z-index: 500;
+  backdrop-filter: blur(6px);
+}
+#db-stats strong { color: var(--text); }
+
+/* Legend for classified streets */
+#legend {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(234,228,216,0.95);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--text);
+  z-index: 500;
+  backdrop-filter: blur(6px);
+}
+.legend-row { display: flex; align-items: center; gap: 5px; margin-top: 3px; }
+.legend-row:first-child { margin-top: 0; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+.leaflet-popup-content-wrapper { border-radius: 10px; }
+.leaflet-popup-content { font-family: 'Helvetica Neue', -apple-system, sans-serif; font-size: 12px; }
+.popup-via { font-family: Georgia, serif; font-weight: bold; font-size: 14px; margin-bottom: 2px; }
+.popup-meta { color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+.popup-note { font-size: 11px; line-height: 1.4; }
 
 /* ── BOTTOM PANEL ── */
 #panel {
@@ -451,6 +495,14 @@ textarea { resize: none; height: 70px; }
     <div id="map"></div>
     <div id="map-hint">📍 Tocca la mappa per selezionare la strada</div>
     <div id="point-badge">📍 Punto selezionato — compila il form ↓</div>
+    <div id="db-stats"></div>
+    <div id="legend">
+      <div class="legend-row"><div class="legend-dot" style="background:#1C1C1A"></div>Veloce, senza protezione</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#C0392B"></div>Trafficata, senza ciclabile</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#E8A020"></div>Tranquilla, senza ciclabile</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#27AE60"></div>Ciclabile separata</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#2980B9"></div>ZTL / pedonale</div>
+    </div>
   </div>
 
   <!-- Bottom panel -->
@@ -570,6 +622,44 @@ function initMap(lat, lng) {
     // Open panel if collapsed
     if (!panelOpen) togglePanel();
   });
+
+  loadDatabase();
+}
+
+// ── DATABASE LAYER (segnalazioni reali) ──
+const CLASSIFICATION_COLORS = { nero:'#1C1C1A', rosso:'#C0392B', giallo:'#E8A020', verde:'#27AE60', blu:'#2980B9' };
+
+function loadDatabase() {
+  fetch('streetsmart_roma.geojson')
+    .then(r => r.json())
+    .then(data => {
+      let plotted = 0;
+      data.features.forEach(f => {
+        if (!f.geometry || f.geometry.type !== 'Point') return;
+        const [lon, lat] = f.geometry.coordinates;
+        const p = f.properties;
+        const color = CLASSIFICATION_COLORS[p.classificazione] || '#8A8278';
+        L.circleMarker([lat, lon], {
+          radius: 6,
+          color: '#FFFFFF',
+          weight: 1.5,
+          fillColor: color,
+          fillOpacity: 0.9,
+        }).addTo(map).bindPopup(
+          `<div class="popup-via">${p.nome}</div>` +
+          `<div class="popup-meta">${p.quartiere || ''} · ${p.n_testimonianze || 1} segnalazion${(p.n_testimonianze||1) === 1 ? 'e' : 'i'}</div>` +
+          (p.note ? `<div class="popup-note">${p.note}</div>` : '')
+        );
+        plotted++;
+      });
+      const meta = data.meta || {};
+      const statsEl = document.getElementById('db-stats');
+      if (statsEl) {
+        statsEl.innerHTML = `<strong>${plotted}</strong> strade` +
+          (meta.ultima_segnalazione ? `<br>ultima: ${meta.ultima_segnalazione.replace('T',' ')}` : '');
+      }
+    })
+    .catch(() => { /* silent fail — il form di segnalazione resta comunque utilizzabile */ });
 }
 
 function placeUserMarker(lat, lng) {
