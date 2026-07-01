@@ -3,25 +3,19 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481356,
-          41.889038
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0001",
         "nome": "Lungotevere Aventino",
         "quartiere": "Aventino/Testaccio",
         "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
+        "classificazione": "verde",
+        "score": 1,
         "ciclabile": "si",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 5,
-        "note": "pista ciclabile presente separata dal traffico. Ricolorato da verde a rosso in base a 1 segnalazioni reali (ultima: 2026-06-17T04:54)."
+        "n_testimonianze": 4,
+        "note": "pista ciclabile presente separata dal traffico"
       }
     },
     {
@@ -66,13 +60,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.473989,
-          41.903192
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0004",
         "nome": "Lungotevere Marzio",
@@ -83,7 +71,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 5,
+        "n_testimonianze": 4,
         "note": "4 corsie veloci nessuna protezione"
       }
     },
@@ -112,13 +100,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.467515,
-          41.901368
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0006",
         "nome": "Lungotevere Tor di Nona",
@@ -129,7 +111,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "4 corsie veloci nessuna protezione"
       }
     },
@@ -295,25 +277,19 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.490286,
-          41.894397
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0015",
         "nome": "Via Cavour",
         "quartiere": "Esquilino",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "rosso",
+        "score": 4,
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 5,
-        "note": "trafficata 4 corsie nessuna ciclabile. Ricolorato da rosso a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:56)."
+        "n_testimonianze": 4,
+        "note": "trafficata 4 corsie nessuna ciclabile"
       }
     },
     {
@@ -552,13 +528,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480876,
-          41.896361
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0028",
         "nome": "Via del Plebiscito",
@@ -569,7 +539,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 6,
+        "n_testimonianze": 4,
         "note": "trafficata nessuna ciclabile"
       }
     },
@@ -609,13 +579,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480726,
-          41.892648
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0031",
         "nome": "Via del Teatro di Marcello",
@@ -626,7 +590,7 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 5,
+        "n_testimonianze": 4,
         "note": "trafficata curva pericolosa"
       }
     },
@@ -644,13 +608,13 @@
         "nome": "Viale delle Milizie",
         "quartiere": "Prati",
         "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
+        "classificazione": "rosso",
+        "score": 4,
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
-        "note": "4 corsie trafficata nessuna ciclabile. Ricolorato da rosso a verde in base a 1 segnalazioni reali (ultima: 2026-06-16T04:42)."
+        "n_testimonianze": 1,
+        "note": "4 corsie trafficata nessuna ciclabile"
       }
     },
     {
@@ -684,13 +648,13 @@
         "nome": "Via Crescenzio",
         "quartiere": "Prati",
         "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 4,
-        "note": "strada urbana 2 corsie traffico contenuto. Ricolorato da giallo a rosso in base a 1 segnalazioni reali (ultima: 2026-06-16T04:42)."
+        "n_testimonianze": 3,
+        "note": "strada urbana 2 corsie traffico contenuto"
       }
     },
     {
@@ -868,13 +832,13 @@
         "nome": "Via Panisperna",
         "quartiere": "Rione Monti",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
-        "note": "senso unico storico traffico contenuto. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:56)."
+        "n_testimonianze": 1,
+        "note": "senso unico storico traffico contenuto"
       }
     },
     {
@@ -914,13 +878,13 @@
         "nome": "Via Urbana",
         "quartiere": "Rione Monti",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 3,
-        "note": "senso unico residenziale Monti. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:56)."
+        "n_testimonianze": 2,
+        "note": "senso unico residenziale Monti"
       }
     },
     {
@@ -937,13 +901,13 @@
         "nome": "Via Leonina",
         "quartiere": "Rione Monti",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
-        "note": "senso unico Monti traffico contenuto. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:56)."
+        "n_testimonianze": 1,
+        "note": "senso unico Monti traffico contenuto"
       }
     },
     {
@@ -1051,48 +1015,36 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.469014,
-          41.896601
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0051",
         "nome": "Via Giulia",
         "quartiere": "Centro Storico",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 4,
-        "note": "storica traffico contenuto. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:57)."
+        "n_testimonianze": 3,
+        "note": "storica traffico contenuto"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.467273,
-          41.898018
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0052",
         "nome": "Via dei Banchi Vecchi",
         "quartiere": "Centro Storico",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 3,
-        "note": "senso unico storico. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T04:57)."
+        "n_testimonianze": 2,
+        "note": "senso unico storico"
       }
     },
     {
@@ -1109,13 +1061,13 @@
         "nome": "Via del Governo Vecchio",
         "quartiere": "Centro Storico",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
-        "note": "senso unico storico traffico contenuto. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-16T13:13)."
+        "n_testimonianze": 1,
+        "note": "senso unico storico traffico contenuto"
       }
     },
     {
@@ -1461,13 +1413,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.479095,
-          41.908424
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0071",
         "nome": "Via del Babuino",
@@ -1478,7 +1424,7 @@
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 3,
+        "n_testimonianze": 2,
         "note": "ZTL confermata - segnalazione Nikolai"
       }
     },
@@ -1501,13 +1447,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47104,
-          41.899318
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0073",
         "nome": "Via della Pace",
@@ -1518,7 +1458,7 @@
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "vicoletto ZTL flusso pedonale"
       }
     },
@@ -1541,7 +1481,7 @@
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 4,
+        "n_testimonianze": 3,
         "note": "vicoletto storico pedonale misto"
       }
     },
@@ -1581,13 +1521,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.471217,
-          41.895006
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0077",
         "nome": "Piazza Farnese",
@@ -1598,7 +1532,7 @@
         "ciclabile": "no",
         "n_corsie": 0,
         "senso_unico": "no",
-        "n_testimonianze": 5,
+        "n_testimonianze": 4,
         "note": "ZTL pedonale quasi completo"
       }
     },
@@ -2306,25 +2240,19 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.474668,
-          41.911302
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0116",
         "nome": "Via Giuseppe Pisanelli",
         "quartiere": "Parioli",
         "municipio": "II",
-        "classificazione": "rosso",
-        "score": 4,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
-        "note": "strada tranquilla residenziale. Ricolorato da giallo a rosso in base a 1 segnalazioni reali (ultima: 2026-06-16T14:46)."
+        "n_testimonianze": 1,
+        "note": "strada tranquilla residenziale"
       }
     },
     {
@@ -2643,7 +2571,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 1,
         "note": "arteria trafficata 4 corsie nessuna ciclabile"
       }
     },
@@ -2729,25 +2657,19 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.542853,
-          41.94369
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0137",
         "nome": "Viale Jonio",
         "quartiere": "Montesacro",
         "municipio": "III",
-        "classificazione": "rosso",
-        "score": 4,
+        "classificazione": "verde",
+        "score": 1,
         "ciclabile": "si",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 4,
-        "note": "ciclabile presente - aggiornamento segnalazione. Ricolorato da verde a rosso in base a 2 segnalazioni reali (ultima: 2026-06-19T12:56)."
+        "n_testimonianze": 2,
+        "note": "ciclabile presente - aggiornamento segnalazione"
       }
     },
     {
@@ -2803,13 +2725,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.522283,
-          41.946094
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0141",
         "nome": "Via dei Prati Fiscali",
@@ -2820,7 +2736,7 @@
         "ciclabile": "si",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 5,
+        "n_testimonianze": 3,
         "note": "pista ciclabile presente"
       }
     },
@@ -3291,13 +3207,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.519608,
-          41.910851
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0169",
         "nome": "Via Cremona",
@@ -3308,7 +3218,7 @@
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "senso unico residenziale"
       }
     },
@@ -3479,25 +3389,19 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.528105,
-          41.944042
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0179",
         "nome": "Viale Tirreno",
         "quartiere": "Montesacro",
         "municipio": "III",
-        "classificazione": "verde",
-        "score": 1,
+        "classificazione": "rosso",
+        "score": 4,
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 8,
-        "note": "arteria trafficata 4 corsie nessuna ciclabile. Ricolorato da rosso a verde in base a 6 segnalazioni reali (ultima: 2026-06-19T12:56)."
+        "n_testimonianze": 2,
+        "note": "arteria trafficata 4 corsie nessuna ciclabile"
       }
     },
     {
@@ -3764,7 +3668,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 2,
         "note": "arteria trafficata nessuna ciclabile doppia fila traffico veloce"
       }
     },
@@ -3941,13 +3845,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.515788,
-          41.905448
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0203",
         "nome": "Viale Regina Elena",
@@ -3958,7 +3856,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "rettilineo con tendenza al traffico veloce - segnalazione @metaiyo"
       }
     },
@@ -4312,7 +4210,7 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "traffico locale scarso - segnalazione @Sim1_71"
       }
     },
@@ -4422,13 +4320,13 @@
         "nome": "Via Prospero Alpino",
         "quartiere": "Ostiense",
         "municipio": "VIII",
-        "classificazione": "verde",
-        "score": 1,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
-        "note": "traffico locale - segnalazione @Sim1_71. Ricolorato da giallo a verde in base a 1 segnalazioni reali (ultima: 2026-06-16T06:07)."
+        "n_testimonianze": 1,
+        "note": "traffico locale - segnalazione @Sim1_71"
       }
     },
     {
@@ -4473,7 +4371,7 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "traffico locale - segnalazione @Sim1_71"
       }
     },
@@ -4496,7 +4394,7 @@
         "ciclabile": "no",
         "n_corsie": 0,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "traffico locale - segnalazione @Sim1_71"
       }
     },
@@ -4519,7 +4417,7 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "traffico locale - segnalazione @Sim1_71"
       }
     },
@@ -4720,13 +4618,13 @@
         "nome": "Piazza di Porta Maggiore",
         "quartiere": "Esquilino",
         "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
+        "classificazione": "nero",
+        "score": 5,
         "ciclabile": "no",
         "n_corsie": 0,
         "senso_unico": "no",
-        "n_testimonianze": 3,
-        "note": "molti flussi veicolari veloci che si incrociano. Ricolorato da nero a rosso in base a 1 segnalazioni reali (ultima: 2026-06-19T14:40)."
+        "n_testimonianze": 2,
+        "note": "molti flussi veicolari veloci che si incrociano"
       }
     },
     {
@@ -5153,19 +5051,13 @@
         "ciclabile": "no",
         "n_corsie": 0,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "piazza trafficata caotica - segnalazione @metaiyo"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.512122,
-          41.901156
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0263",
         "nome": "Piazzale Aldo Moro",
@@ -5176,7 +5068,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile - segnalazione Nikolai Fissenko"
       }
     },
@@ -5301,42 +5193,30 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "strada urbana traffico contenuto - segnalazione @Sim1_71"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.515262,
-          41.896591
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0271",
         "nome": "Via dei Latini",
         "quartiere": "Nomentano",
         "municipio": "II",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 2,
-        "note": "strada urbana traffico contenuto - segnalazione Nikolai.fissenko. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-18T14:54)."
+        "n_testimonianze": 1,
+        "note": "strada urbana traffico contenuto - segnalazione Nikolai.fissenko"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514025,
-          41.894975
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0272",
         "nome": "Via dei Marsi",
@@ -5347,7 +5227,7 @@
         "ciclabile": "no",
         "n_corsie": 2,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 1,
         "note": "strada urbana traffico contenuto - segnalazione Nikolai.fissenko"
       }
     },
@@ -5790,13 +5670,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.521238,
-          41.933518
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0292",
         "nome": "Via delle Valli",
@@ -5807,7 +5681,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile - segnalazione Nikolai"
       }
     },
@@ -5927,7 +5801,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 1,
         "note": "traffico veloce punto poco visibile sotto ponte - segnalazione @nomad_valentine"
       }
     },
@@ -6025,13 +5899,13 @@
         "nome": "Circonvallazione Casilina",
         "quartiere": "Prenestino",
         "municipio": "V",
-        "classificazione": "nero",
-        "score": 5,
+        "classificazione": "rosso",
+        "score": 4,
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
-        "note": "stretta causa lavori macchine veloci - segnalazione @nomad_valentine. Ricolorato da rosso a nero in base a 1 segnalazioni reali (ultima: 2026-06-09T03:03)."
+        "n_testimonianze": 1,
+        "note": "stretta causa lavori macchine veloci - segnalazione @nomad_valentine"
       }
     },
     {
@@ -6539,25 +6413,19 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.477057,
-          41.907371
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0329",
         "nome": "Via Antonio Canova",
         "quartiere": "Flaminio",
         "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
+        "classificazione": "giallo",
+        "score": 3,
         "ciclabile": "no",
         "n_corsie": 1,
         "senso_unico": "si",
-        "n_testimonianze": 2,
-        "note": "senso unico - segnalazione Nikolai. Ricolorato da giallo a blu in base a 1 segnalazioni reali (ultima: 2026-06-17T05:08)."
+        "n_testimonianze": 1,
+        "note": "senso unico - segnalazione Nikolai"
       }
     },
     {
@@ -6727,7 +6595,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
     },
@@ -6750,7 +6618,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
     },
@@ -7494,7 +7362,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
     },
@@ -7546,13 +7414,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.458138,
-          41.912028
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0378",
         "nome": "Viale Angelico",
@@ -7563,7 +7425,7 @@
         "ciclabile": "si",
         "n_corsie": 0,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "pista ciclabile presente"
       }
     },
@@ -7695,13 +7557,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.465155,
-          41.898194
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "SS-ROM-0385",
         "nome": "Lungotevere dei Sangallo",
@@ -7712,7 +7568,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "multicarreggiata pericolosissima"
       }
     },
@@ -7735,7 +7591,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "multicarreggiata pericolosissima"
       }
     },
@@ -7850,7 +7706,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
     },
@@ -7873,7 +7729,7 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 2,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
     },
@@ -7896,4179 +7752,9 @@
         "ciclabile": "no",
         "n_corsie": 4,
         "senso_unico": "no",
-        "n_testimonianze": 3,
+        "n_testimonianze": 1,
         "note": "arteria trafficata nessuna ciclabile"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.523985,
-          41.926929
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0394",
-        "nome": "Via Nomentana",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 6,
-        "note": "Aggiunta da 6 segnalazioni reali via form (ultima: 2026-06-19T12:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.508006,
-          41.913889
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0395",
-        "nome": "Via di Villa Ricotti",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:43)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.525809,
-          41.911885
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0396",
-        "nome": "Via Lorenzo il Magnifico",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:43)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.524729,
-          41.909169
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0397",
-        "nome": "Via Arduino",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:43)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.521825,
-          41.905496
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0398",
-        "nome": "Via Tiburtina",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:43)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.467666,
-          41.898625
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0399",
-        "nome": "Corso Vittorio Emanuele Secondo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 4,
-        "note": "Aggiunta da 4 segnalazioni reali via form (ultima: 2026-06-17T04:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.489753,
-          41.903509
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0400",
-        "nome": "Piazza dei Crociferi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T13:13)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.492328,
-          41.870485
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0401",
-        "nome": "Via Martin Alonzo Pinzòn",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.49065,
-          41.869706
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0402",
-        "nome": "Via Bartolomeo Diaz",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.491092,
-          41.869412
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0403",
-        "nome": "Via Fernando Colombo",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.491416,
-          41.867936
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0404",
-        "nome": "Via Ermenegildo Frediani",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.490375,
-          41.867828
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0405",
-        "nome": "Via Manfredo Camperio",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.486357,
-          41.869907
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0406",
-        "nome": "Via Francesco Antonio Pigafetta",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:06)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.486834,
-          41.870984
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0407",
-        "nome": "Piazzale 12 Ottobre 1492",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:05)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481452,
-          41.87101
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0408",
-        "nome": "Via Giacomo Bove",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:05)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.483,
-          41.87122
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0409",
-        "nome": "Via Federico Nansen",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:04)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.482223,
-          41.871495
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0410",
-        "nome": "Via Vito Bering",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:04)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481642,
-          41.870285
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0411",
-        "nome": "Via Francesco Negri",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T06:03)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.455703,
-          41.906961
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0412",
-        "nome": "Viale dei Bastioni di Michelangelo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T04:42)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.461382,
-          41.904839
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0413",
-        "nome": "Via Giovanni Vitelleschi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T04:42)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.466478,
-          41.907482
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0414",
-        "nome": "Via Plinio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T04:42)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.467941,
-          41.906197
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0415",
-        "nome": "Via Cicerone",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 3,
-        "note": "Aggiunta da 3 segnalazioni reali via form (ultima: 2026-06-16T14:47)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.470702,
-          41.906934
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0416",
-        "nome": "Via Federico Cesi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T04:42)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.440372,
-          41.882796
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0417",
-        "nome": "Via Leone Tredicesimo",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-13T07:50)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.432961,
-          41.891892
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0418",
-        "nome": "Via del Casale di San Pio Quinto",
-        "quartiere": "Municipio Roma XIII",
-        "municipio": "XIII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-13T07:50)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.427197,
-          41.899163
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0419",
-        "nome": "Via Bartolo da Sassoferrato",
-        "quartiere": "Municipio Roma XIII",
-        "municipio": "XIII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-13T07:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.416067,
-          41.903381
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0420",
-        "nome": "Via di Boccea",
-        "quartiere": "Aurelio",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-13T07:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476177,
-          41.91077
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0421",
-        "nome": "Piazza del Popolo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-13T07:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.519448,
-          41.922866
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0422",
-        "nome": "Via Principe Eugenio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T20:26)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.508364,
-          41.87845
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0423",
-        "nome": "Piazza Armenia",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.499384,
-          41.871172
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0424",
-        "nome": "Via Cilicia",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.487603,
-          41.878667
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0425",
-        "nome": "Via Guerrieri",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.489615,
-          41.875965
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0426",
-        "nome": "Via Odoardo Beccari",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.489508,
-          41.875162
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0427",
-        "nome": "Via Ambrogio Contarini",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.487127,
-          41.874138
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0428",
-        "nome": "Viale Marco Polo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-12T13:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.472323,
-          41.898221
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0429",
-        "nome": "Piazza di Sant'Eustachio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.475777,
-          41.899386
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0430",
-        "nome": "Via Giustiniani",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.473949,
-          41.897908
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0431",
-        "nome": "Corso del Rinascimento",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.488512,
-          41.894442
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0432",
-        "nome": "Via Baccina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.48746,
-          41.894051
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0433",
-        "nome": "Via Tor de' Conti",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.488823,
-          41.894027
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0434",
-        "nome": "Via della Madonna dei Monti",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-17T04:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.493215,
-          41.896375
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0435",
-        "nome": "Via dei Ciancaleoni",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.49344,
-          41.895856
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0436",
-        "nome": "Via dei Capocci",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.491713,
-          41.892409
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0437",
-        "nome": "Via Vittorino da Feltre",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.493032,
-          41.891301
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0438",
-        "nome": "Via Nicola Salvi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480587,
-          41.8946
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0439",
-        "nome": "Via d'Aracoeli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481238,
-          41.894182
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0440",
-        "nome": "Piazza d'Aracoeli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480808,
-          41.89037
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0441",
-        "nome": "Via Luigi Petroselli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481724,
-          41.887582
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0442",
-        "nome": "Via della Greca",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.482904,
-          41.888407
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0443",
-        "nome": "Via dei Cerchi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.482625,
-          41.887478
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0444",
-        "nome": "Via dell'Ara Massima di Ercole",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.485554,
-          41.884961
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0445",
-        "nome": "Via del Circo Massimo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.492871,
-          41.890856
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0446",
-        "nome": "Piazza del Colosseo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.491391,
-          41.889131
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0447",
-        "nome": "Via Celio Vibenna",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.506025,
-          41.90186
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0448",
-        "nome": "Ciclabile Roma Termini-Sapienza",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.509029,
-          41.903314
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0449",
-        "nome": "Viale dell'Università",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-17T04:52)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.523592,
-          41.908685
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0450",
-        "nome": "Via della Lega Lombarda",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:52)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.508164,
-          41.909037
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0451",
-        "nome": "Viale del Policlinico",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 3,
-        "note": "Aggiunta da 3 segnalazioni reali via form (ultima: 2026-06-17T04:52)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514558,
-          41.910716
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0452",
-        "nome": "Via Bari",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:52)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.520798,
-          41.913447
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0453",
-        "nome": "Piazza Bologna",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:51)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.526438,
-          41.929687
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0454",
-        "nome": "Circonvallazione Salaria",
-        "quartiere": "Trieste",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-17T04:51)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.518427,
-          41.928557
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0455",
-        "nome": "Via Tripoli",
-        "quartiere": "Trieste",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:51)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476488,
-          41.911739
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0456",
-        "nome": "Piazzale Flaminio",
-        "quartiere": "Pinciano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:50)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.474489,
-          41.907972
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0457",
-        "nome": "Lungotevere in Augusta",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-17T04:50)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476778,
-          41.895983
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0458",
-        "nome": "Largo di Torre Argentina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.482235,
-          41.895797
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0459",
-        "nome": "Piazza di San Marco",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.485111,
-          41.897106
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0460",
-        "nome": "Via Quattro Novembre",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:49)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.485919,
-          41.896174
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0461",
-        "nome": "Via Biberatica",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.48692,
-          41.896446
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0462",
-        "nome": "Largo Magnanapoli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.494116,
-          41.901404
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0463",
-        "nome": "Via Napoli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.495832,
-          41.902677
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0464",
-        "nome": "Piazza della Repubblica",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.497227,
-          41.902485
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0465",
-        "nome": "Viale Luigi Einaudi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.499015,
-          41.902575
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0466",
-        "nome": "Viale Enrico De Nicola",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.507019,
-          41.899348
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0467",
-        "nome": "Via Marsala",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.510281,
-          41.8979
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0468",
-        "nome": "Via di Porta San Lorenzo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.508049,
-          41.900784
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0469",
-        "nome": "Viale Pretoriano",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.505803,
-          41.90564
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0470",
-        "nome": "Viale Castro Pretorio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:48)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.499695,
-          41.910308
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0471",
-        "nome": "Sottovia Ignazio Guidi",
-        "quartiere": "Salario",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:47)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.470913,
-          41.90547
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0472",
-        "nome": "Piazza Cavour",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:47)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.471467,
-          41.905191
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0473",
-        "nome": "Via Vittoria Colonna",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:47)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.474128,
-          41.904999
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0474",
-        "nome": "Ponte Cavour",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:47)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476513,
-          41.906581
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0475",
-        "nome": "Piazza Augusto Imperatore",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:46)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.475772,
-          41.906813
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0476",
-        "nome": "Via di Ripetta",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-16T14:46)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.473992,
-          41.910716
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0477",
-        "nome": "Via Maria Cristina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:46)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.472705,
-          41.914753
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0478",
-        "nome": "Via Domenico Alberto Azuni",
-        "quartiere": "Flaminio",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:46)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.472279,
-          41.91624
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0479",
-        "nome": "Via Gaetano Filangieri",
-        "quartiere": "Flaminio",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-16T14:46)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.478838,
-          41.919807
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0480",
-        "nome": "Via Antonio Gramsci",
-        "quartiere": "Pinciano",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:45)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.484181,
-          41.924535
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0481",
-        "nome": "Via di Villa San Filippo",
-        "quartiere": "Parioli",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:45)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.490404,
-          41.927749
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0482",
-        "nome": "Via Eustachio Manfredi",
-        "quartiere": "Pinciano",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:45)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.486777,
-          41.926171
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0483",
-        "nome": "Piazza Santiago del Cile",
-        "quartiere": "Pinciano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:45)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.507491,
-          41.943711
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0484",
-        "nome": "Via Salaria",
-        "quartiere": "Val Melaina",
-        "municipio": "",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-16T14:45)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.507763,
-          41.929162
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0485",
-        "nome": "Viale del Casale della Finanziera",
-        "quartiere": "Parioli",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:44)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.525558,
-          41.942584
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0486",
-        "nome": "Via Valle Vermiglio",
-        "quartiere": "Municipio Roma III",
-        "municipio": "III",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:44)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.534285,
-          41.935426
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0487",
-        "nome": "Corso Sempione",
-        "quartiere": "Municipio Roma III",
-        "municipio": "III",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-16T14:44)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.517211,
-          41.886676
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0488",
-        "nome": "Via La Spezia",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.52146,
-          41.887447
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0489",
-        "nome": "Piazza Lodi",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514086,
-          41.891392
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0490",
-        "nome": "Via Giovanni Giolitti",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.550893,
-          41.944199
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0491",
-        "nome": "Via Domenico Comparetti",
-        "quartiere": "Monte Sacro Alto",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T12:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.526438,
-          41.945343
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0492",
-        "nome": "Piazzale Jonio",
-        "quartiere": "Municipio Roma III",
-        "municipio": "III",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-19T12:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.528917,
-          41.943494
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0493",
-        "nome": "Piazza Capri",
-        "quartiere": "Municipio Roma III",
-        "municipio": "III",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T12:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.532032,
-          41.93463
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0494",
-        "nome": "Via Nomentana Nuova",
-        "quartiere": "Municipio Roma III",
-        "municipio": "III",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T12:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.523556,
-          41.920958
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0495",
-        "nome": "Via Rodolfo Lanciani",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T12:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.5143,
-          41.908126
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0496",
-        "nome": "Via Treviso",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.516775,
-          41.908073
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0497",
-        "nome": "Via Pavia",
-        "quartiere": "Nomentano",
-        "municipio": "",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.50875,
-          41.901247
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0498",
-        "nome": "Viale Piero Gobetti",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:56)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.512863,
-          41.900898
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0499",
-        "nome": "Via dei Marrucini",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.51213,
-          41.900623
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0500",
-        "nome": "Via dei Liburni",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.510595,
-          41.899817
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0501",
-        "nome": "Via dei Taurini",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.510477,
-          41.899037
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0502",
-        "nome": "Via dei Ramni",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.512158,
-          41.898387
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0503",
-        "nome": "Via dei Corsi",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.511078,
-          41.898331
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0504",
-        "nome": "Via dei Sabelli",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 3,
-        "note": "Aggiunta da 3 segnalazioni reali via form (ultima: 2026-06-18T14:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.518252,
-          41.899506
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0505",
-        "nome": "Via dei Volsci",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 3,
-        "note": "Aggiunta da 3 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.517419,
-          41.897954
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0506",
-        "nome": "Via degli Ausoni",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.515488,
-          41.898196
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0507",
-        "nome": "Via dei Sardi",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514926,
-          41.897624
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0508",
-        "nome": "Via degli Etruschi",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514093,
-          41.89691
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0509",
-        "nome": "Largo degli Osci",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514683,
-          41.896263
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0510",
-        "nome": "Via degli Aurunci",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.512462,
-          41.895987
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0511",
-        "nome": "Via dei Rutoli",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514207,
-          41.893949
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0512",
-        "nome": "Via di Porta Labicana",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-18T14:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514733,
-          41.895222
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0513",
-        "nome": "Via dei Campani",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.514486,
-          41.894815
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0514",
-        "nome": "Via dei Lucani",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.513503,
-          41.89592
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0515",
-        "nome": "Via degli Equi",
-        "quartiere": "Municipio Roma II",
-        "municipio": "II",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-18T14:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.464481,
-          41.902421
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0516",
-        "nome": "Piazza Pia",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:20)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.471603,
-          41.904337
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0517",
-        "nome": "Via Ulpiano",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:18)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.469465,
-          41.903801
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0518",
-        "nome": "Via Triboniano",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:18)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.470963,
-          41.903306
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0519",
-        "nome": "Piazza dei Tribunali",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:18)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.485865,
-          41.899204
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0520",
-        "nome": "Salita di Montecavallo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:11)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.487146,
-          41.899441
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0521",
-        "nome": "Via del Quirinale",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:11)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.484024,
-          41.899609
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0522",
-        "nome": "Via de' Lucchesi",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.484664,
-          41.899971
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0523",
-        "nome": "Via della Dataria",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.483205,
-          41.899795
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0524",
-        "nome": "Via dell'Umiltà",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.484063,
-          41.901342
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0525",
-        "nome": "Vicolo Scavolino",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.483408,
-          41.901446
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0526",
-        "nome": "Via della Stamperia",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:10)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.482797,
-          41.901262
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0527",
-        "nome": "Via Poli",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.483387,
-          41.902292
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0528",
-        "nome": "Via del Tritone",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481091,
-          41.902557
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0529",
-        "nome": "Piazza di San Silvestro",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.481066,
-          41.90367
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0530",
-        "nome": "Via della Vite",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480805,
-          41.904133
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0531",
-        "nome": "Via Frattina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.48083,
-          41.904692
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0532",
-        "nome": "Via Bocca di Leone",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.480072,
-          41.904999
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0533",
-        "nome": "Via dei Condotti",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.479299,
-          41.90568
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0534",
-        "nome": "Via della Frezza",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:09)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476678,
-          41.90859
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0535",
-        "nome": "Via del Vantaggio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.476431,
-          41.909184
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0536",
-        "nome": "Via Angelo Brunetti",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.477622,
-          41.909264
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0537",
-        "nome": "Via della Fontanella",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47789,
-          41.908691
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0538",
-        "nome": "Via Laurina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47828,
-          41.908297
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0539",
-        "nome": "Via di Gesù e Maria",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.478502,
-          41.907789
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0540",
-        "nome": "Via di San Giacomo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.479278,
-          41.906793
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0541",
-        "nome": "Via Belsiana",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47872,
-          41.907427
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0542",
-        "nome": "Vicolo delle Orsoline",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:08)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.451243,
-          41.881186
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0543",
-        "nome": "Clivo Rutario",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:03)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.453049,
-          41.877826
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0544",
-        "nome": "Via Abate Ugone",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:03)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.453779,
-          41.877371
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0545",
-        "nome": "Via Fonteiana",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:03)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.456307,
-          41.874103
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0546",
-        "nome": "Via di Donna Olimpia",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:02)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.458389,
-          41.873027
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0547",
-        "nome": "Piazzale Enrico Dunant",
-        "quartiere": "Municipio Roma XII",
-        "municipio": "XII",
-        "classificazione": "rosso",
-        "score": 4,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T05:02)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.4799,
-          41.890057
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0548",
-        "nome": "Lungotevere dei Pierleoni",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47946,
-          41.890705
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0549",
-        "nome": "Piazza di Monte Savello",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.472229,
-          41.895453
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0550",
-        "nome": "Via della Corda",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.469965,
-          41.896234
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0551",
-        "nome": "Via di Montoro",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.469085,
-          41.897245
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0552",
-        "nome": "Via del Pellegrino",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.46761,
-          41.899382
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0553",
-        "nome": "Piazza dell'Orologio",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.471587,
-          41.900449
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0554",
-        "nome": "Via dei Coronari",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-27T05:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.470158,
-          41.89919
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0555",
-        "nome": "Via del Corallo",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 3,
-        "note": "Aggiunta da 3 segnalazioni reali via form (ultima: 2026-06-27T05:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.471207,
-          41.899254
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0556",
-        "nome": "Via di Tor Millina",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-17T04:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.48211,
-          41.903167
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0557",
-        "nome": "Via della Mercede",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-30T22:16)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.521399,
-          41.88759
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0558",
-        "nome": "Via Gallarate",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-30T15:52)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.452517,
-          41.90977
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0559",
-        "nome": "Via Andrea Doria",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-28T16:42)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.304703,
-          41.718423
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0560",
-        "nome": "Belvedere Giovanni Carosio",
-        "quartiere": "Lido di Castel Fusano",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-28T06:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.292309,
-          41.72396
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0561",
-        "nome": "Lungomare Duilio",
-        "quartiere": "Lido di Ostia Levante",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-28T06:58)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.287505,
-          41.72553
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0562",
-        "nome": "Piazzale Magellano",
-        "quartiere": "Lido di Ostia Levante",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-28T06:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.283663,
-          41.727335
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0563",
-        "nome": "Lungomare Paolo Toscanelli",
-        "quartiere": "Lido di Ostia Levante",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-28T06:57)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.486506,
-          41.851436
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0564",
-        "nome": "Via Cristoforo Colombo",
-        "quartiere": "Municipio Roma VIII",
-        "municipio": "VIII",
-        "classificazione": "nero",
-        "score": 5,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-27T22:28)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.459814,
-          41.82841
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0565",
-        "nome": "Viale della Tecnica",
-        "quartiere": "E.U.R.",
-        "municipio": "",
-        "classificazione": "verde",
-        "score": 1,
-        "ciclabile": "si",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-27T14:29)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.46675,
-          41.898687
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0566",
-        "nome": "Via del Pavone",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-27T05:55)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.468405,
-          41.899697
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0567",
-        "nome": "Via di Monte Giordano",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-27T05:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.47231,
-          41.899586
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0568",
-        "nome": "Via di Santa Maria dell'Anima",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-27T05:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.469034,
-          41.900527
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0569",
-        "nome": "Piazza di San Salvatore in Lauro",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-27T05:54)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.467563,
-          41.900398
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0570",
-        "nome": "Via di Panico",
-        "quartiere": "Municipio Roma I",
-        "municipio": "I",
-        "classificazione": "blu",
-        "score": 2,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-27T05:53)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.520035,
-          41.884734
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0571",
-        "nome": "Via Volterra",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T14:41)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.519388,
-          41.884794
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0572",
-        "nome": "Via Pistoia",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.519461,
-          41.886038
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0573",
-        "nome": "Via Voghera",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 1,
-        "note": "Aggiunta da 1 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.518828,
-          41.885184
-        ]
-      },
-      "properties": {
-        "id": "SS-ROM-0574",
-        "nome": "Via Terni",
-        "quartiere": "Municipio Roma VII",
-        "municipio": "VII",
-        "classificazione": "giallo",
-        "score": 3,
-        "ciclabile": "no",
-        "n_corsie": null,
-        "senso_unico": null,
-        "n_testimonianze": 2,
-        "note": "Aggiunta da 2 segnalazioni reali via form (ultima: 2026-06-19T14:40)."
-      }
     }
-  ],
-  "meta": {
-    "ultima_segnalazione": "2026-06-30T22:16",
-    "totale_segnalazioni_raccolte": 354,
-    "totale_segnalazioni_geolocalizzate": 280,
-    "generato_il": "2026-07-01",
-    "nota": "Le 74 segnalazioni aggiuntive (senza coordinate GPS nel form) sono usate solo per la riconciliazione colori, non compaiono sulla mappa."
-  }
+  ]
 }
